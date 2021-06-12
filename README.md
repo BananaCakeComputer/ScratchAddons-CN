@@ -1,12 +1,12 @@
 <img src="https://aerfaying.com/Project/GetAsset?name=ac6b6f1f9e6d9f5e7c58585a0abc1745.svg" alt="Scratch Addons logo" align="right" width="128px"></img>
 # 欢迎来到Scratch扩展中文版仓库！
 
-[![](https://img.shields.io/github/stars/ScratchAddons/ScratchAddons?color=blue&style=flat-square)](https://github.com/BananaCakeComputer/ScratchAddons-ForChinese/stargazers) 
-[![](https://img.shields.io/github/forks/ScratchAddons/ScratchAddons?color=blue&style=flat-square)](https://github.com/BananaCakeComputer/ScratchAddons-ForChinese/network/members)
-[![](https://img.shields.io/github/watchers/ScratchAddons/ScratchAddons?color=blue&style=flat-square)](https://github.com/BananaCakeComputer/ScratchAddons-ForChinese/watchers) 
-[![](https://img.shields.io/github/issues/ScratchAddons/ScratchAddons?color=green&style=flat-square)](https://github.com/BananaCakeComputer/ScratchAddons-ForChinese/issues) 
-[![](https://img.shields.io/github/issues-pr/ScratchAddons/ScratchAddons?color=green&style=flat-square)](https://github.com/BananaCakeComputer/ScratchAddons-ForChinese/pulls) 
-[![](https://img.shields.io/github/license/ScratchAddons/ScratchAddons?style=flat-square)](https://github.com/BananaCakeComputer/ScratchAddons-ForChinese/blob/master/LICENSE) <!-- 2 spaces -->  
+[![](https://img.shields.io/github/stars/BananaCakeComputer/ScratchAddons-ForChinese?color=blue&style=flat-square)](https://github.com/BananaCakeComputer/ScratchAddons-ForChinese/stargazers) 
+[![](https://img.shields.io/github/forks/BananaCakeComputer/ScratchAddons-ForChinese?color=blue&style=flat-square)](https://github.com/BananaCakeComputer/ScratchAddons-ForChinese/network/members)
+[![](https://img.shields.io/github/watchers/BananaCakeComputer/ScratchAddons-ForChinese?color=blue&style=flat-square)](https://github.com/BananaCakeComputer/ScratchAddons-ForChinese/watchers) 
+[![](https://img.shields.io/github/issues/BananaCakeComputer/ScratchAddons-ForChinese?color=green&style=flat-square)](https://github.com/BananaCakeComputer/ScratchAddons-ForChinese/issues) 
+[![](https://img.shields.io/github/issues-pr/BananaCakeComputer/ScratchAddons-ForChinese?color=green&style=flat-square)](https://github.com/BananaCakeComputer/ScratchAddons-ForChinese/pulls) 
+[![](https://img.shields.io/github/license/BananaCakeComputer/ScratchAddons-ForChinese?style=flat-square)](https://github.com/BananaCakeComputer/ScratchAddons-ForChinese/blob/master/LICENSE) <!-- 2 spaces -->  
 [![](https://img.shields.io/chrome-web-store/v/fbeffbjdlemaoicjdapfpikkikjoneco?style=flat-square&logo=google-chrome&logoColor=white&label=version&color=4285F4)](https://chrome.google.com/webstore/detail/fbeffbjdlemaoicjdapfpikkikjoneco)
 [![](https://img.shields.io/chrome-web-store/users/fbeffbjdlemaoicjdapfpikkikjoneco?style=flat-square&logo=google-chrome&logoColor=white&label=users&color=4285F4)](https://chrome.google.com/webstore/detail/fbeffbjdlemaoicjdapfpikkikjoneco)
 [![](https://img.shields.io/amo/v/scratch-messaging-extension?style=flat-square&logo=firefox-browser&logoColor=white&label=version&color=FF7139)](https://addons.mozilla.org/firefox/addon/scratch-messaging-extension/)
@@ -39,32 +39,19 @@ Scratch扩展必须配合[Scratch官网](https://scratch.mit.edu)
 
 Scratch扩展中文版还在翻译阶段，不支持扩展商店下载
 
-### From source
+### 本地安装（唯一的方法
 
-No build is required. You may download the source code by doing one of these steps.
+点击[这里](https://github.com/BananaCakeComputer/ScratchAddons-ForChinese/archive/refs/heads/master.zip)，下载zip压缩包
 
-1. Cloning the repository by running `git clone https://github.com/ScratchAddons/ScratchAddons.git`.
-2. Download the zipball of the current state of the repository [here](https://github.com/ScratchAddons/ScratchAddons/archive/master.zip).
-3. Download one of the builds on [the releases page](https://github.com/ScratchAddons/ScratchAddons/releases). (.zip recommended)
+把zip文件解压好
 
-After downloading the extension to your computer, just load it by following these steps.
-
-- Google Chrome
-  1. Open `chrome://extensions` to open the Extension Management page by typing it into your address bar.
-  2. Enable Developer Mode by clicking the toggle switch next to Developer mode.
-  3. Click the `Load unpacked` button on the top and select the extension directory which has the `manifest.json` file in it. 
+- Google Chrome以及Chromium内核的浏览器
+  1. 导航栏输入 `chrome://extensions` 以打开扩展程序页面。
+  2. 按下开发者模式开关。
+  3. 点击 `加载已解压的扩展程序` ，选择刚刚解压后的文件夹。
 
 - Mozilla Firefox
-  1. Open `about:debugging` to open the add-ons page by typing it into your address bar.
-  2. Click `This Firefox` on the right-hand menu.
-  3. Click `Load Temporary Add-on...` and select the `manifest.json` file.
+  1. 导航栏输入 `about:debugging` 打开设置页面。
+  2. 点击 `此 Firefox` 。
+  3. 点击 `临时载入附加组件...` 选择刚刚解压后的文件夹里的 `manifest.json` 文件。
 
-## Contribute
-
-If you found a bug, or want to suggest new features, please use the [issues tab](https://github.com/ScratchAddons/ScratchAddons/issues). If you want to help with the code or add a new addon, fork this repository, and then create a [pull request](https://github.com/ScratchAddons/ScratchAddons/pulls). Also, please read our [contributing guidelines](https://github.com/ScratchAddons/ScratchAddons/blob/master/CONTRIBUTING.md).
-
-## License
-
-Scratch Addons is licensed under the terms of the [GNU General Public License v3.0](https://github.com/ScratchAddons/ScratchAddons/blob/master/LICENSE).
-
-Other third-party libraries used are listed on [/libraries/README.md](https://github.com/ScratchAddons/ScratchAddons/tree/master/libraries#readme).
