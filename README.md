@@ -1,12 +1,12 @@
-<img src="https://raw.githubusercontent.com/ScratchAddons/ScratchAddons/master/images/icon.svg" alt="Scratch Addons logo" align="right" width="128px"></img>
-# Welcome to Scratch Addons' repository!
+<img src="https://aerfaying.com/Project/GetAsset?name=ac6b6f1f9e6d9f5e7c58585a0abc1745.svg" alt="Scratch Addons logo" align="right" width="128px"></img>
+# 欢迎来到Scratch扩展中文版仓库！
 
-[![](https://img.shields.io/github/stars/ScratchAddons/ScratchAddons?color=blue&style=flat-square)](https://github.com/ScratchAddons/ScratchAddons/stargazers) 
-[![](https://img.shields.io/github/forks/ScratchAddons/ScratchAddons?color=blue&style=flat-square)](https://github.com/ScratchAddons/ScratchAddons/network/members)
-[![](https://img.shields.io/github/watchers/ScratchAddons/ScratchAddons?color=blue&style=flat-square)](https://github.com/ScratchAddons/ScratchAddons/watchers) 
-[![](https://img.shields.io/github/issues/ScratchAddons/ScratchAddons?color=green&style=flat-square)](https://github.com/ScratchAddons/ScratchAddons/issues) 
-[![](https://img.shields.io/github/issues-pr/ScratchAddons/ScratchAddons?color=green&style=flat-square)](https://github.com/ScratchAddons/ScratchAddons/pulls) 
-[![](https://img.shields.io/github/license/ScratchAddons/ScratchAddons?style=flat-square)](https://github.com/ScratchAddons/ScratchAddons/blob/master/LICENSE) <!-- 2 spaces -->  
+[![](https://img.shields.io/github/stars/ScratchAddons/ScratchAddons?color=blue&style=flat-square)](https://github.com/BananaCakeComputer/ScratchAddons-ForChinese/stargazers) 
+[![](https://img.shields.io/github/forks/ScratchAddons/ScratchAddons?color=blue&style=flat-square)](https://github.com/BananaCakeComputer/ScratchAddons-ForChinese/network/members)
+[![](https://img.shields.io/github/watchers/ScratchAddons/ScratchAddons?color=blue&style=flat-square)](https://github.com/BananaCakeComputer/ScratchAddons-ForChinese/watchers) 
+[![](https://img.shields.io/github/issues/ScratchAddons/ScratchAddons?color=green&style=flat-square)](https://github.com/BananaCakeComputer/ScratchAddons-ForChinese/issues) 
+[![](https://img.shields.io/github/issues-pr/ScratchAddons/ScratchAddons?color=green&style=flat-square)](https://github.com/BananaCakeComputer/ScratchAddons-ForChinese/pulls) 
+[![](https://img.shields.io/github/license/ScratchAddons/ScratchAddons?style=flat-square)](https://github.com/BananaCakeComputer/ScratchAddons-ForChinese/blob/master/LICENSE) <!-- 2 spaces -->  
 [![](https://img.shields.io/chrome-web-store/v/fbeffbjdlemaoicjdapfpikkikjoneco?style=flat-square&logo=google-chrome&logoColor=white&label=version&color=4285F4)](https://chrome.google.com/webstore/detail/fbeffbjdlemaoicjdapfpikkikjoneco)
 [![](https://img.shields.io/chrome-web-store/users/fbeffbjdlemaoicjdapfpikkikjoneco?style=flat-square&logo=google-chrome&logoColor=white&label=users&color=4285F4)](https://chrome.google.com/webstore/detail/fbeffbjdlemaoicjdapfpikkikjoneco)
 [![](https://img.shields.io/amo/v/scratch-messaging-extension?style=flat-square&logo=firefox-browser&logoColor=white&label=version&color=FF7139)](https://addons.mozilla.org/firefox/addon/scratch-messaging-extension/)
@@ -17,43 +17,27 @@
 [![](https://img.shields.io/badge/chat-on_discord-7289da.svg?style=flat-square)](https://discord.gg/R5NBqwMjNc)
 [![](https://img.shields.io/badge/website-scratchaddons.com-ff7b26.svg?style=flat-square)](https://scratchaddons.com)
 
-## About
+# 关于Scratch扩展中文版
 
-Scratch Addons is a WebExtension (supports both Chrome and Firefox). Scratch Addons' mission is to combine all existing Scratch extensions, userscripts and userstyles into a single easy-to-access place, while still letting users choose which ones to enable.
+Scratch扩展中文版是专门为[ScratchAddons](https://github.com/ScratchAddons/ScratchAddons/)翻译的版本，它同时兼容Google Chrome和FireFox Browser。
 
-### What's actually an "addon"?
+ScratchAddons支持多国语言，可是ScratchAddons不支持中文，因此，Scratch扩展中文版诞生了
 
-An addon is similar to an extension or a userscript, but they use special APIs provided by the Scratch Addons extension. These APIs allow addons to run scripts on a Scratch page (userscripts), run scripts on the background (persistent scripts), or apply styles to the Scratch website (userstyles).
+# 如何使用Scratch扩展中文版
 
-Userscripts and persistent scripts can use the `addon.*` JavaScript APIs, which allow them to obtain Scratch-related information (for example, get the current logged in user) and also use extension APIs (like sending notifications).
+如果您在中国大陆，安装完成之后，要想使用它，必须使用vpn翻墙软件，可以是扩展插件，也可以是应用程序
 
-Converting an already existing extension/userscript into an addon, or writing your own, is very easy. [Check out the guide](https://github.com/ScratchAddons/ScratchAddons/wiki/Creating-an-addon).
+当然，如果您是港澳台同胞（会看简体中文），海外华人，可以跳过上面的步骤
 
-### If everything is an addon, then what does Scratch Addons do?
+Scratch扩展必须配合[Scratch官网](https://scratch.mit.edu)
 
-Scratch Addons by itself is just an addon loader. Its main tasks are:
+您可以在[ScratchAddons官方网站](https://scratchaddons.com)
 
-- Allow users to enable, disable and configure addons.
-- Run addons and provide APIs to them.
-- Provide global state to addons (for example, the `addon.auth` API).
-- Pollute prototypes for use by addon userscripts.
-- Provide ways to access and modify Redux state.
-- Avoid addons from interfering with each other.
-- Avoid duplicate work from different addons.
+# 下载
 
-### Addons outside of Scratch Addons itself
+### 从扩展商店下载
 
-Other extensions (and even forks of Scratch) can also provide their users with most addons from Scratch Addons, as long as a compatibility layer for `addon.*` and other parts of the addon loader is present. Notable examples are the [Scratch 3 Developer Tools extension](https://github.com/ScratchAddons/DevtoolsExtension) and the [TurboWarp](https://github.com/TurboWarp/scratch-gui/tree/develop/src/addons) editor. These also inherit translations from the Scratch Addons project.
-
-## Install
-
-### From extension stores
-
-[![](https://img.shields.io/chrome-web-store/v/fbeffbjdlemaoicjdapfpikkikjoneco?style=flat-square&logo=google-chrome&logoColor=white&label=install&color=4285F4)](https://chrome.google.com/webstore/detail/fbeffbjdlemaoicjdapfpikkikjoneco)  
-&nbsp;&nbsp;&nbsp;&nbsp;↳ Install on Google Chrome, Opera, Brave, Vivaldi, Microsoft Edge (>79), and other Chromium-based browsers.
-
-[![](https://img.shields.io/amo/v/scratch-messaging-extension?style=flat-square&logo=firefox-browser&logoColor=white&label=install&color=FF7139)](https://addons.mozilla.org/firefox/addon/scratch-messaging-extension/)  
-&nbsp;&nbsp;&nbsp;&nbsp;↳ Install on Mozilla Firefox.
+Scratch扩展中文版还在翻译阶段，不支持扩展商店下载
 
 ### From source
 
