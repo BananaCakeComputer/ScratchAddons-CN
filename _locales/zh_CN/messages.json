@@ -1,0 +1,337 @@
+{
+  "extensionName": {
+    "message": "Scratch扩展"
+  },
+  "extensionDescription": {
+    "message": "Scratch扩展为scratch.mit.edu增加了功能与主题"
+  },
+  "messaging": {
+    "message": "信息"
+  },
+  "games": {
+    "message": "游戏"
+  },
+  "openInNewTab": {
+    "message": "在新标签页中打开"
+  },
+  "changelog": {
+    "message": "查看更新日志"
+  },
+  "notifChangelog": {
+    "message": "查看更新日志"
+  },
+  "15min": {
+    "message": "15分钟"
+  },
+  "1hour": {
+    "message": "1小时"
+  },
+  "8hours": {
+    "message": "8小时"
+  },
+  "24hours": {
+    "message": "24小时"
+  },
+  "untilEnabled": {
+    "message": "在下次打开前保持关闭"
+  },
+  "muteFor": {
+    "message": "关闭通知"
+  },
+  "unmute": {
+    "message": "开启通知"
+  },
+  "recommended": {
+    "message": "推荐设置"
+  },
+  "beta": {
+    "message": "测试中"
+  },
+  "danger": {
+    "message": "警告"
+  },
+  "dangerWarning": {
+    "message": "要启用$1功能？"
+  },
+  "forums": {
+    "message": "讨论区"
+  },
+  "forEditor": {
+    "message": "适用于编辑器"
+  },
+  "forWebsite": {
+    "message": "适用于网站"
+  },
+  "confirmPreset": {
+    "message": "您确定要加载此预置？"
+  },
+  "confirmReset": {
+    "message": "您确定要重新打开此功能？"
+  },
+  "settingsTitle": {
+    "message": "Scratch扩展 - 设置"
+  },
+  "settings": {
+    "message": "设置"
+  },
+  "all": {
+    "message": "所有设置"
+  },
+  "editorFeatures": {
+    "message": "Scratch编辑器功能"
+  },
+  "costumeEditorFeatures": {
+    "message": "编辑器外观"
+  },
+  "codeEditorFeatures": {
+    "message": "编辑器功能"
+  },
+  "websiteFeatures": {
+    "message": "Scratch官方网站功能"
+  },
+  "profilesFeatures": {
+    "message": "个人信息"
+  },
+  "projectPlayerFeatures": {
+    "message": "作品预览器"
+  },
+  "projectPageFeatures": {
+    "message": "项目页面"
+  },
+  "others": {
+    "message": "其他"
+  },
+  "themes": {
+    "message": "主题"
+  },
+  "editorThemes": {
+    "message": "编辑器主题"
+  },
+  "websiteThemes": {
+    "message": "网站主题"
+  },
+  "popupFeatures": {
+    "message": "扩展页面功能"
+  },
+  "theme": {
+    "message": "主题："
+  },
+  "credits": {
+    "message": "贡献者"
+  },
+  "review": {
+    "message": "Review"
+  },
+  "feedback": {
+    "message": "反馈"
+  },
+  "moreSettings": {
+    "message": "更多设置"
+  },
+  "filter": {
+    "message": "过滤："
+  },
+  "resetToDefault": {
+    "message": "刷新"
+  },
+  "creditTo": {
+    "message": "Credit to:"
+  },
+  "viewLicenses": {
+    "message": "查看仓库许可证"
+  },
+  "reset": {
+    "message": "重置"
+  },
+  "default": {
+    "message": "默认"
+  },
+  "presets": {
+    "message": "预设"
+  },
+  "scratchAddonsTheme": {
+    "message": "Scratch扩展主题"
+  },
+  "scratchAddonsThemeDescription": {
+    "message": "这能让您在扩展页面切换日夜模式"
+  },
+  "light": {
+    "message": "白"
+  },
+  "dark": {
+    "message": "黑"
+  },
+  "licensesTitle": {
+    "message": "Scratch扩展 - 许可证"
+  },
+  "licenses": {
+    "message": "许可证"
+  },
+  "licensesForLibrary": {
+    "message": "仓库许可证 $1"
+  },
+  "libraryCredits": {
+    "message": "查看仓库许可证"
+  },
+  "recommendedTooltip": {
+    "message": "这是我们推荐的功能。试试吧！"
+  },
+  "dangerTooltip": {
+    "message": "需慎用。请在使用前了解此功能用处"
+  },
+  "betaTooltip": {
+    "message": "记住此功能可能会出现问题"
+  },
+  "forumsTooltip": {
+    "message": "此功能适用于Scratch讨论区"
+  },
+  "reportItHere": {
+    "message": "在这里报告"
+  },
+  "forumWarning": {
+    "message": "消息由Scratch扩展发出：确保在禁用所有浏览器扩展，包括Scratch插件，仍会发生您要报告的错误。如果你认为一个bug是由Scratch插件引起的，请$1。"
+  },
+  "forumWarningGeneral": {
+    "message": "消息由Scratch扩展发出：Scratch社区禁止讨论浏览器扩展，包括Scratch扩展。不要Scratch插件与其任何功能做广告。如果你发现问题，请$1."
+  },
+  "search": {
+    "message": "搜索"
+  },
+  "permissionsTitle": {
+    "message": "Scratch扩展 - 权限"
+  },
+  "permissions": {
+    "message": "权限"
+  },
+  "enablePermissionsTitle": {
+    "message": "请允站点访问权限"
+  },
+  "enablePermissionsDescription": {
+    "message": "Scratch扩展需要站点访问权限才能使用"
+  },
+  "enableButton": {
+    "message": "开启权限"
+  },
+  "enableButtonDescription": {
+    "message": "点击按钮以开启权限"
+  },
+  "permissionsScreenAlt": {
+    "message": "Screenshot of a dialog to enable site access"
+  },
+  "clickAllowDescription": {
+    "message": "点击“允许”，Scratch会重新加载并正常工作"
+  },
+  "permissionsDenied": {
+    "message": "请求权限失败，请再试一次。"
+  },
+  "translate": {
+    "message": "帮助翻译"
+  },
+  "extensionUpdate": {
+    "message": "Scratch扩展更新"
+  },
+  "extensionHasUpdated": {
+    "message": "Scratch更新到版本$1"
+  },
+  "extensionUpdateInfo1": {
+    "message": "新功能: \"gamepad support\", \"cat blocks\", \"editor sound effects\"和 \"remove curved stage border\". 转到$1启用它们"
+  },
+  "scratchAddonsSettings": {
+    "message": "Scratch扩展设置"
+  },
+  "extensionUpdateInfo2": {
+    "message": "此更新还提供了一个更全面的Scratch扩展设置页面，以及编辑器中插件的性能改进。"
+  },
+  "notAffiliated": {
+    "message": "Scratch扩展与Scratch官方无关"
+  },
+  "new": {
+    "message": "新功能！"
+  },
+  "enabled": {
+    "message": "可正常使用的功能",
+    "description": "已启用加载项的类别名称"
+  },
+  "exportAndImportSettings": {
+    "message": "导入及导出设置"
+  },
+  "exportAndImportSettingsDescription": {
+    "message": "将设置导出为JSON文件，在其他计算机上使用。"
+  },
+  "useBrowserSync": {
+    "message": "您还可以通过浏览器设置同步选项来自动与其它设备同步扩展设置。"
+  },
+  "export": {
+    "message": "导出设置"
+  },
+  "import": {
+    "message": "导入设置"
+  },
+  "fileNotSelected": {
+    "message": "请选择设置文件"
+  },
+  "importSuccess": {
+    "message": "导入设置成功。Scratch扩展将重新加载。"
+  },
+  "importFailed": {
+    "message": "设置文件损坏，请再试一次。"
+  },
+  "confirmImport": {
+    "message": "确认"
+  },
+  "quickSettings": {
+    "message": "设置"
+  },
+  "runningOnThisPage": {
+    "message": "此标签页扩展"
+  },
+  "recentlyUsed": {
+    "message": "Recently used",
+    "description": "最近使用的加载项的类别名称"
+  },
+  "settingsPagePermission": {
+    "message": "要开启\"$1\"功能，请在标签页打开设置。"
+  },
+  "openFullSettings": {
+    "message": "在标签页打开设置"
+  },
+  "skipOpenFullSettings": {
+    "message": "取消"
+  },
+  "exploreAllAddons": {
+    "message": "探索$1功能：",
+    "description": "Placeholder is a number. Example: explore all 80+ addons"
+  },
+  "captureCommentError": {
+    "message": "Message added by Scratch Addons: it appears that your comment doesn't follow $1, which asks Scratchers not to advertise or name browser extensions. This comment wasn't posted because it will probably result in your account getting muted from commenting for 5 minutes."
+  },
+  "captureCommentPolicy": {
+    "message": "Scratch Community's Browser Extension/Userscript Policy"
+  },
+  "captureCommentPostAnyway": {
+    "message": "Post anyway"
+  },
+  "captureCommentConfirm": {
+    "message": "Are you sure you want to post this comment? Scratch will probably mute your account from commenting anywhere on Scratch for at least 5 minutes."
+  },
+  "extensionStoreDescription1": {
+    "message": "➖ scratch.mit.edu features ➖\n- Messaging: click the extension icon to get a summary of your messages.\n- Cloud games: see who's playing multiplayer games.\n- Notifier: get browser notifications when you get new messages.\n- Navigation bar customization: re-add the “discuss” button.\n- Make 2.0-styled pages look like 3.0.\n- Website and editor dark modes.\n- And more!"
+  },
+  "extensionStoreDescription2": {
+    "message": "➖ Project editor features ➖\n- Developer tools: adds a find box and new menu options to the editor.\n- 60FPS player mode.\n- Pause button.\n- Onion skinning.\n- Auto-hide block palette.\n- Display stage on left side.\n- And more!"
+  },
+  "extensionStoreDescription3": {
+    "message": "Keep in mind, all features are togglable! To enable or disable them, go to the settings page by clicking this extension’s icon under “extensions” in the top-right corner of your browser, and then click the gear icon."
+  },
+  "extensionStoreDescription4": {
+    "message": "No usernames or passwords are stored, and you are required to be signed into your Scratch account in your browser for some features to work.",
+    "description": "NOTE: please only mention \"Scratch\" once on this string, do not repeat this word."
+  },
+  "extensionStoreDescription5": {
+    "message": "This extension is open source software licensed under GPL v3.\nTo contribute or check the source code: https://github.com/ScratchAddons\nFor more information, go to: ScratchAddons.com"
+  },
+  "extensionStoreDescription6": {
+    "message": "This project is not affiliated, associated, or in any way officially connected with the Scratch website, Team, Foundation, or any of its affiliates.",
+    "description": "NOTE: please only mention \"Scratch\" once on this string, do not repeat this word."
+  }
+}
