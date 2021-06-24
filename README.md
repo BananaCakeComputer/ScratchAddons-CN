@@ -31,7 +31,7 @@ ScratchAddons支持多国语言，可是ScratchAddons不支持中文，因此，
 
 Scratch扩展必须配合[Scratch官网](https://scratch.mit.edu)
 
-您可以在[ScratchAddons官方网站](https://scratchaddons.com)
+您可以在[ScratchAddons官方网站](https://scratchaddons.com)下载英文版
 
 # 下载
 
@@ -45,7 +45,7 @@ Scratch扩展中文版还在翻译阶段，不支持扩展商店下载
 
 把zip文件解压好
 
-- Google Chrome以及Chromium内核的浏览器
+- Google Chrome以及Chromium内核的浏览器（例如新版Microsoft Edge）
   1. 导航栏输入 `chrome://extensions` 以打开扩展程序页面。
   2. 按下开发者模式开关。
   3. 点击 `加载已解压的扩展程序` ，选择刚刚解压后的文件夹。
