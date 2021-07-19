@@ -19,6 +19,8 @@
 
 # 关于Scratch扩展中文版
 
+### 正在汉化v1.15.0版本，新版将在今年稍后发出
+
 Scratch扩展中文版是专门为[ScratchAddons](https://github.com/ScratchAddons/ScratchAddons/)翻译的版本，它同时兼容Google Chrome和FireFox Browser。
 
 ScratchAddons支持多国语言，可是ScratchAddons不支持中文，因此，Scratch扩展中文版诞生了
