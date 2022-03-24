@@ -3,7 +3,6 @@
   "description": "Shows statistics from ScratchDB on profile pages.",
   "tags": ["community", "profiles"],
   "credits": [{ "name": "Maximouse" }],
-  "versionAdded": "1.11.0",
   "userscripts": [
     {
       "url": "userscript.js",
@@ -16,5 +15,6 @@
       "matches": ["https://scratch.mit.edu/users/*/"]
     }
   ],
-  "libraries": ["chartjs"]
+  "libraries": ["chartjs"],
+  "l10n": true
 }

@@ -14,8 +14,8 @@
       "runAtComplete": false
     }
   ],
-  "versionAdded": "1.0.0",
   "dynamicEnable": true,
   "tags": ["community", "forums"],
-  "enabledByDefault": false
+  "enabledByDefault": false,
+  "l10n": true
 }

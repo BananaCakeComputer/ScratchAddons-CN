@@ -9,11 +9,11 @@
   "userscripts": [
     {
       "url": "userscript.js",
-      "matches": ["projects", "studios", "https://scratch.mit.edu/studios_www/*", "profiles", "forums"],
+      "matches": ["https://scratch.mit.edu/*"],
       "runAtComplete": false
     }
   ],
-  "versionAdded": "1.0.0",
   "tags": ["community", "forums"],
-  "enabledByDefault": false
+  "enabledByDefault": false,
+  "l10n": true
 }

@@ -1,6 +1,6 @@
 {
-  "name": "Scratch Messaging",
-  "description": "Available when clicking the Scratch Addons icon. Provides easy reading and replying to your Scratch messages: groups messages by project, shows full comment text and context, allows direct comment replying.",
+  "name": "Scratch讯息",
+  "description": "单击Scratch扩展图标，可以更容易的阅读和回复您的临时讯息：按项目分组讯息，显示完整的评论文本和上下文，也可以直接回复评论。",
   "credits": [
     {
       "name": "World_Languages"
@@ -11,11 +11,11 @@
   ],
   "popup": {
     "icon": "../../images/icons/envelope.svg",
-    "name": "Messaging",
+    "name": "讯息",
     "fullscreen": true
   },
-  "versionAdded": "1.0.0",
   "persistentScripts": ["background.js"],
   "tags": ["popup", "recommended"],
-  "enabledByDefault": true
+  "enabledByDefault": true,
+  "l10n": true
 }

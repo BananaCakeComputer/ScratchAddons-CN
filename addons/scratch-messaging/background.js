@@ -1,13 +1,10 @@
 import commentEmojis from "../scratch-notifier/comment-emojis.js";
-import { linkifyTextNode, pingifyTextNode } from "../../libraries/common/cs/fast-linkify.js";
 
 export default async function ({ addon, global, console, setTimeout, setInterval, clearTimeout, clearInterval }) {
   let lastDateTime;
   let data;
   let pendingAuthChange = false;
   let addonEnabled = true;
-  // reuse one DOMParser
-  const parser = new DOMParser();
 
   const getDefaultData = () => ({
     messages: [],
@@ -96,15 +93,6 @@ export default async function ({ addon, global, console, setTimeout, setInterval
       }
     }
     lastDateTime = new Date(checkedMessages[0].datetime_created).getTime();
-
-    data.stMessages = await (
-      await fetch(`https://api.scratch.mit.edu/users/${addon.auth.username}/messages/admin`, {
-        headers: {
-          "x-token": addon.auth.xToken,
-        },
-      })
-    ).json();
-
     data.ready = true;
   }
 
@@ -120,23 +108,13 @@ export default async function ({ addon, global, console, setTimeout, setInterval
       const { resourceType, resourceId, commentIds } = popupRequest.retrieveComments;
       retrieveComments(resourceType, resourceId, commentIds)
         .then((comments) => sendResponse(comments))
-        .catch((err) => {
-          // TODO: are these errors recognized by popup?
-          // (Check for other catches below as well)
-          console.error(err);
-          sendResponse(err);
-        });
+        .catch((err) => sendResponse(err));
       return true;
     } else if (popupRequest === "markAsRead") {
       addon.account.clearMessages();
     } else if (popupRequest.deleteComment) {
       const { resourceType, resourceId, commentId } = popupRequest.deleteComment;
       deleteComment({ resourceType, resourceId, commentId })
-        .then((res) => sendResponse(res))
-        .catch((err) => sendResponse(err));
-      return true;
-    } else if (popupRequest.dismissAlert) {
-      dismissAlert(popupRequest.dismissAlert)
         .then((res) => sendResponse(res))
         .catch((err) => sendResponse(err));
       return true;
@@ -149,110 +127,11 @@ export default async function ({ addon, global, console, setTimeout, setInterval
   });
 
   async function retrieveComments(resourceType, resourceId, commentIds, page = 1, commentsObj = {}) {
-    if (resourceType === "project" || resourceType === "gallery") {
-      let projectAuthor;
-      if (resourceType === "project") {
-        const projectRes = await fetch(`https://api.scratch.mit.edu/projects/${resourceId}`);
-        if (!projectRes.ok) return commentsObj; // empty
-        const projectJson = await projectRes.json();
-        projectAuthor = projectJson.author.username;
-      }
-
-      const getCommentUrl = (commId) =>
-        resourceType === "project"
-          ? `https://api.scratch.mit.edu/users/${projectAuthor}/projects/${resourceId}/comments/${commId}`
-          : `https://api.scratch.mit.edu/studios/${resourceId}/comments/${commId}`;
-      const getRepliesUrl = (commId, offset) =>
-        resourceType === "project"
-          ? `https://api.scratch.mit.edu/users/${projectAuthor}/projects/${resourceId}/comments/${commId}/replies?offset=${offset}&limit=40&nocache=${Date.now()}`
-          : `https://api.scratch.mit.edu/studios/${resourceId}/comments/${commId}/replies?offset=${offset}&limit=40&nocache=${Date.now()}`;
-
-      for (const commentId of commentIds) {
-        if (commentsObj[`${resourceType[0]}_${commentId}`]) continue;
-
-        const res = await fetch(getCommentUrl(commentId));
-
-        if (!res.ok) continue;
-        const json = await res.json();
-        // This is sometimes null for deleted comments
-        if (json === null) continue;
-        const parentId = json.parent_id || commentId;
-        const childrenComments = {};
-
-        let parentComment;
-
-        if (json.parent_id) {
-          const resParent = await fetch(getCommentUrl(parentId));
-          if (!resParent.ok) continue;
-          const jsonParent = await resParent.json();
-          parentComment = jsonParent;
-        } else {
-          parentComment = json;
-        }
-
-        // If originally requested comment was not a parent comment, we do not use
-        // "json" variable at all. We'll get info for the same comment when fetching
-        // all of the parent's child comments anyway
-        // Note: we need to check replies for all parent comments, reply_count doesn't work properly
-
-        const getReplies = async (offset) => {
-          const repliesRes = await fetch(getRepliesUrl(parentId, offset));
-          if (!repliesRes.ok) return [];
-          const repliesJson = await repliesRes.json();
-          return repliesJson;
-        };
-
-        const replies = [];
-        let lastRepliesLength = 40;
-        let offset = 0;
-        while (lastRepliesLength === 40) {
-          const newReplies = await getReplies(offset);
-          newReplies.forEach((c) => replies.push(c));
-          lastRepliesLength = newReplies.length;
-          offset += 40;
-        }
-
-        if (json.parent_id && replies.length === 0) {
-          // Something went wrong, we didn't get the replies
-          continue;
-        }
-
-        for (const reply of replies) {
-          const commenteeReply = replies.find((c) => c.author.id === reply.commentee_id);
-          const replyingTo = commenteeReply ? commenteeReply.author.username : parentComment.author.username;
-          const mention = `<a href=\"https://scratch.mit.edu/users/${replyingTo}\">@${replyingTo}</a>`;
-          childrenComments[`${resourceType[0]}_${reply.id}`] = {
-            author: reply.author.username,
-            authorId: reply.author.id,
-            content: `${mention} ${fixCommentContent(reply.content)}`,
-            date: reply.datetime_created,
-            children: null,
-            childOf: `${resourceType[0]}_${parentId}`,
-            scratchTeam: reply.author.scratchteam,
-          };
-        }
-        for (const childCommentId of Object.keys(childrenComments)) {
-          commentsObj[childCommentId] = childrenComments[childCommentId];
-        }
-
-        commentsObj[`${resourceType[0]}_${parentId}`] = {
-          author: parentComment.author.username,
-          authorId: parentComment.author.id,
-          content: fixCommentContent(parentComment.content),
-          date: parentComment.datetime_created,
-          children: Object.keys(childrenComments),
-          childOf: null,
-          scratchTeam: parentComment.author.scratchteam,
-        };
-      }
-      return commentsObj;
-    }
-
     const res = await fetch(
       `https://scratch.mit.edu/site-api/comments/${resourceType}/${resourceId}/?page=${page}&nocache=${Date.now()}`
     );
     const text = await res.text();
-    const dom = parser.parseFromString(text, "text/html");
+    const dom = new DOMParser().parseFromString(text, "text/html");
     for (const commentChain of dom.querySelectorAll(".top-level-reply:not(.removed)")) {
       if (commentIds.length === 0) {
         // We found all comments we had to look for
@@ -277,7 +156,7 @@ export default async function ({ addon, global, console, setTimeout, setInterval
         childrenComments[`${resourceType[0]}_${childId}`] = {
           author: author.replace(/\*/g, ""),
           authorId: Number(child.querySelector(".reply").getAttribute("data-commentee-id")),
-          content: fixCommentContent(child.querySelector(".content")),
+          content: fixCommentContent(child.querySelector(".content").innerHTML),
           date: child.querySelector(".time").getAttribute("title"),
           children: null,
           childOf: `${resourceType[0]}_${parentId}`,
@@ -298,7 +177,7 @@ export default async function ({ addon, global, console, setTimeout, setInterval
         commentsObj[`${resourceType[0]}_${parentId}`] = {
           author: parentAuthor.replace(/\*/g, ""),
           authorId: Number(parentComment.querySelector(".reply").getAttribute("data-commentee-id")),
-          content: fixCommentContent(parentComment.querySelector(".content")),
+          content: fixCommentContent(parentComment.querySelector(".content").innerHTML),
           date: parentComment.querySelector(".time").getAttribute("title"),
           children: Object.keys(childrenComments),
           childOf: null,
@@ -325,66 +204,24 @@ export default async function ({ addon, global, console, setTimeout, setInterval
   }
 
   function fixCommentContent(value) {
-    const shouldLinkify = scratchAddons.localState.addonsEnabled["more-links"] === true;
-    let node;
-    if (value instanceof Node) {
-      // profile
-      node = value.cloneNode(true);
-    } else {
-      // JSON API
-      const fragment = parser.parseFromString(value.trim(), "text/html");
-      node = fragment.body;
-    }
-    for (let i = node.childNodes.length; i--; ) {
-      const item = node.childNodes[i];
-      item.textContent = item.textContent.replace(/\n/g, "");
-      if (item instanceof Text && item.textContent === "") {
-        item.remove();
-      } else if (item instanceof HTMLAnchorElement && item.href.startsWith("/")) {
-        item.href = "https://scratch.mit.edu" + item.href;
-      } else if (item instanceof HTMLImageElement) {
-        const splitString = item.src.split("/");
+    const matches = value.match(/<img([\w\W]+?)[\/]?>/g);
+    if (matches) {
+      for (const match of matches) {
+        // Replace Scratch emojis with Unicode emojis
+        const src = match.match(/\<img.+src\=(?:\"|\')(.+?)(?:\"|\')(?:.+?)\>/)[1];
+        const splitString = src.split("/");
         const imageName = splitString[splitString.length - 1];
-        if (commentEmojis[imageName]) item.replaceWith(commentEmojis[imageName]);
+        if (commentEmojis[imageName]) {
+          value = value.replace(match, commentEmojis[imageName]);
+        }
       }
     }
-    if (shouldLinkify) {
-      linkifyTextNode(node);
-    }
-    pingifyTextNode(node);
-    return node.innerHTML;
+    value = value.replace(/\n/g, " ").trim(); // Remove newlines
+    value = value.replace(/<a href="\//g, '<a href="https://scratch.mit.edu/');
+    return value;
   }
 
-  async function sendComment({ resourceType, resourceId, content, parent_id, commentee_id, commenteeUsername }) {
-    if (resourceType === "project" || resourceType === "gallery") {
-      const resourceTypeUrl = resourceType === "project" ? "project" : "studio";
-      const res = await fetch(`https://api.scratch.mit.edu/proxy/comments/${resourceTypeUrl}/${resourceId}?sareferer`, {
-        headers: {
-          "content-type": "application/json",
-          "x-csrftoken": addon.auth.csrfToken,
-          "x-token": addon.auth.xToken,
-        },
-        body: JSON.stringify({ content, parent_id, commentee_id }),
-        method: "POST",
-      });
-      if (res.ok) {
-        const json = await res.json();
-        if (json.rejected)
-          return {
-            error: json.rejected,
-            muteStatus: json.status?.mute_status || null,
-          };
-        const mention = `<a href=\"https://scratch.mit.edu/users/${commenteeUsername}\">@${commenteeUsername}</a>`;
-        return {
-          commentId: json.id,
-          username: addon.auth.username,
-          userId: addon.auth.userId,
-          content: `${mention} ${fixCommentContent(json.content)}`,
-        };
-      } else {
-        return { error: res.status };
-      }
-    }
+  function sendComment({ resourceType, resourceId, content, parent_id, commentee_id }) {
     return new Promise((resolve) => {
       // For some weird reason, this only works with XHR in Chrome...
       const xhr = new XMLHttpRequest();
@@ -395,20 +232,10 @@ export default async function ({ addon, global, console, setTimeout, setInterval
       xhr.onload = function () {
         if (xhr.status === 200) {
           try {
-            const dom = parser.parseFromString(xhr.responseText, "text/html");
-            const comment = dom.querySelector(".comment ");
-            const error = dom.querySelector("script#error-data");
-            if (comment) {
-              const commentId = Number(comment.getAttribute("data-comment-id"));
-              const content = fixCommentContent(dom.querySelector(".content"));
-              resolve({ commentId, username: addon.auth.username, userId: addon.auth.userId, content });
-            } else if (error) {
-              const json = JSON.parse(error.textContent);
-              resolve({
-                error: json.error,
-                muteStatus: json.status?.mute_status || null,
-              });
-            } else resolve({ error: 200 }); // Shouldn't ever happen, just in case
+            const dom = new DOMParser().parseFromString(xhr.responseText, "text/html");
+            const commentId = Number(dom.querySelector(".comment ").getAttribute("data-comment-id"));
+            const content = fixCommentContent(dom.querySelector(".content").innerHTML);
+            resolve({ commentId, username: addon.auth.username, userId: addon.auth.userId, content });
           } catch (err) {
             resolve({ error: err });
           }
@@ -419,23 +246,7 @@ export default async function ({ addon, global, console, setTimeout, setInterval
     });
   }
 
-  async function deleteComment({ resourceType, resourceId, commentId }) {
-    if (resourceType === "project" || resourceType === "gallery") {
-      const resourceTypeUrl = resourceType === "project" ? "project" : "studio";
-      const res = await fetch(
-        `https://api.scratch.mit.edu/proxy/comments/${resourceTypeUrl}/${resourceId}/comment/${commentId}?sareferer`,
-        {
-          headers: {
-            "content-type": "application/json",
-            "x-csrftoken": addon.auth.csrfToken,
-            "x-token": addon.auth.xToken,
-          },
-          method: "DELETE",
-        }
-      );
-      if (res.ok) return 200;
-      else return { error: res.status };
-    }
+  function deleteComment({ resourceType, resourceId, commentId }) {
     return new Promise((resolve) => {
       const xhr = new XMLHttpRequest();
       xhr.open("POST", `https://scratch.mit.edu/site-api/comments/${resourceType}/${resourceId}/del/?sareferer`, true);
@@ -450,19 +261,5 @@ export default async function ({ addon, global, console, setTimeout, setInterval
 
       xhr.send(JSON.stringify({ id: String(commentId) }));
     });
-  }
-
-  async function dismissAlert(alertId) {
-    const res = await fetch("https://scratch.mit.edu/site-api/messages/messages-delete/?sareferer", {
-      headers: {
-        "content-type": "application/json",
-        "x-csrftoken": addon.auth.csrfToken,
-        "x-requested-with": "XMLHttpRequest",
-      },
-      body: JSON.stringify({ alertType: "notification", alertId }),
-      method: "POST",
-    });
-    if (!res.ok) return { error: res.status };
-    return { success: true };
   }
 }
