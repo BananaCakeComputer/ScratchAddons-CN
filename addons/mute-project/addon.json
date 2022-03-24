@@ -13,6 +13,6 @@
       "matches": ["https://scratch.mit.edu/projects/*"]
     }
   ],
-  "versionAdded": "1.7.0",
-  "tags": ["editor", "projectPlayer", "recommended"]
+  "tags": ["editor", "projectPlayer", "recommended"],
+  "l10n": true
 }

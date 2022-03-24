@@ -70,7 +70,7 @@
       "default": true
     }
   ],
-  "versionAdded": "1.4.0",
   "tags": ["forums", "profiles", "community"],
-  "enabledByDefault": false
+  "enabledByDefault": false,
+  "l10n": true
 }

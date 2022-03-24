@@ -8,7 +8,6 @@
   ],
   "dynamicEnable": true,
   "dynamicDisable": true,
-  "versionAdded": "1.2.0",
   "userscripts": [
     {
       "url": "userscript.js",
@@ -22,5 +21,6 @@
     }
   ],
   "tags": ["editor", "projectPlayer", "recommended"],
-  "enabledByDefault": false
+  "enabledByDefault": false,
+  "l10n": true
 }

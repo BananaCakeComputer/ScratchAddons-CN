@@ -63,6 +63,6 @@
     }
   ],
   "tags": ["community", "profiles"],
-  "versionAdded": "1.3.0",
-  "enabledByDefault": false
+  "enabledByDefault": false,
+  "l10n": true
 }
