@@ -1,10 +1,10 @@
 {
-  "name": "Bitmap images copying",
-  "description": "Allows you to actually copy a bitmap image from the paint editor, so that you can paste it in other websites or software.",
+  "name": "位图图像复制",
+  "description": "可让您在Scratch的图像编辑器中复制位图图像到剪贴板，使图片可粘贴到其他网站或软件中。",
   "info": [
     {
       "type": "notice",
-      "text": "\"Right click \u2192 copy\" is not supported. You must press Ctrl+C while a bitmap image is selected.",
+      "text": "不支持右键-复制图像，你必须选中图像再按下键盘上的CTRL+C",
       "id": "norightclick"
     }
   ],
@@ -14,8 +14,8 @@
       "matches": ["https://scratch.mit.edu/projects/*"]
     }
   ],
-  "versionAdded": "1.0.0",
   "tags": ["editor", "costumeEditor"],
   "permissions": ["clipboardWrite"],
-  "enabledByDefault": false
+  "enabledByDefault": false,
+  "l10n": true
 }

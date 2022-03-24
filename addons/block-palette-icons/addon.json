@@ -1,6 +1,6 @@
 {
-  "name": "Block palette category icons",
-  "description": "Adds icons inside the colored circles that identify block categories.",
+  "name": "积木盒子图标",
+  "description": "替换左侧积木选择按钮圆形图标的样式",
   "tags": ["editor", "codeEditor", "theme"],
   "enabledByDefault": false,
   "dynamicEnable": true,
@@ -11,7 +11,7 @@
       "matches": ["https://scratch.mit.edu/projects/*"]
     }
   ],
-  "versionAdded": "1.11.0",
+  "l10n": true,
   "credits": [
     { "name": "--Explosion--", "link": "https://github.com/explosion-scratch" },
     { "name": "RedGuy7", "link": "https://paul-s-reid.com/web-dev" }

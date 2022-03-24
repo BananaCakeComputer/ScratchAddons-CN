@@ -1,6 +1,6 @@
 {
-  "name": "Profile page banner",
-  "description": "Makes the featured project on any user's profile page into a nice-looking banner.",
+  "name": "个人信息页面背景图片",
+  "description": "使所有人的个人信息页面上的精选作品替换成一个好看的图像。",
   "credits": [
     {
       "name": "Ezlambry",
@@ -22,13 +22,13 @@
   "settings": [
     {
       "id": "blur",
-      "name": "Banner blur",
+      "name": "背景图像模糊度",
       "type": "integer",
       "min": 0,
       "max": 5,
       "default": 0
     }
   ],
-  "versionAdded": "1.5.0",
-  "tags": ["community", "recommended", "profiles"]
+  "tags": ["community", "recommended", "profiles"],
+  "l10n": true
 }

@@ -1,6 +1,6 @@
 {
-  "name": "Better emojis",
-  "description": "Replaces the cat emojis in Scratch comments with improved vector designs.",
+  "name": "更多表情",
+  "description": "使用全新改进的矢量表情替换Scratch评论中的cat emojis。",
   "tags": ["community", "comments"],
   "credits": [
     {
@@ -15,5 +15,5 @@
     }
   ],
   "enabledByDefault": false,
-  "versionAdded": "1.1.0"
+  "l10n": true
 }

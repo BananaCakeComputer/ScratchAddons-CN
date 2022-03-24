@@ -1,6 +1,6 @@
 {
-  "name": "Better forum quoter",
-  "description": "Select text in a forum post and click quote in the bottom right corner to only quote the select text.",
+  "name": "讨论区“引用”功能加强版",
+  "description": "在帖子里选中一个人说的话，点击右下角的“引用”，即可仅引用选中的文本",
   "credits": [
     {
       "name": "TheColaber",
@@ -17,12 +17,12 @@
       "matches": ["https://scratch.mit.edu/discuss/topic/*"]
     }
   ],
-  "versionAdded": "1.7.0",
   "tags": ["forums", "community"],
+  "l10n": true,
   "info": [
     {
       "type": "notice",
-      "text": "Scratchblocks tags are not supported, and the bbcode may not be 100% accurate. To get fully accurate quotes, quote as normal and delete any parts that you don't need.",
+      "text": "不支持引用ScratchBlock标签，并且bbcode（输入框）可能不会100%精确。要准确引用对方说的话，请关闭此功能并删去不想引用的部分。",
       "id": "scratchblocks_notice"
     }
   ]

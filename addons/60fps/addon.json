@@ -1,10 +1,10 @@
 {
-  "name": "Alt+GreenFlag 60FPS player mode",
-  "description": "Alt+Click the green flag to toggle 60FPS.",
+  "name": "Alt+绿旗 60帧模式",
+  "description": "Alt+点击绿旗切换到60帧模式。",
   "info": [
     {
       "type": "notice",
-      "text": "Projects will run twice as fast at 60FPS, because they typically run at 30FPS.",
+      "text": "项目运行速度会是变快到两倍 60侦，因为它们默认以30帧速度运行。",
       "id": "projectRunsFasterNotice"
     }
   ],
@@ -28,7 +28,7 @@
   ],
   "settings": [
     {
-      "name": "Alt+GreenFlag FPS",
+      "name": "Alt+绿旗    帧数",
       "id": "framerate",
       "type": "integer",
       "min": 31,
@@ -37,6 +37,6 @@
     }
   ],
   "tags": ["editor", "projectPlayer", "recommended"],
-  "versionAdded": "1.1.0",
-  "enabledByDefault": true
+  "enabledByDefault": true,
+  "l10n": true
 }

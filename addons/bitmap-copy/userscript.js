@@ -12,7 +12,7 @@ export default async ({ addon, console }) => {
     const dataURL = firstItem[1].source;
     addon.tab
       .copyImage(dataURL)
-      .then(() => console.log("Image successfully copied"))
+      .then(() => console.log("图像成功复制"))
       .catch((e) => console.error(`Image could not be copied: ${e}`));
   });
 };

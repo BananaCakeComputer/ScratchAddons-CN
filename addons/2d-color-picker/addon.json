@@ -1,6 +1,6 @@
 {
-  "name": "2D color picker",
-  "description": "Replaces saturation and brightness sliders with a 2D color picker. Hold Shift while dragging the cursor to change the values on a single axis.",
+  "name": "2D颜色选择器",
+  "description": "用2D颜色选择器替换饱和度和亮度滑块。按下鼠标和Shift键以更改单个轴上的值。",
   "tags": ["editor", "costumeEditor"],
   "credits": [
     {
@@ -21,6 +21,6 @@
     }
   ],
   "libraries": ["tinycolor2"],
-  "versionAdded": "1.12.0",
-  "enabledByDefault": false
+  "enabledByDefault": false,
+  "l10n": true
 }
