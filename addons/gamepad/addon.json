@@ -22,17 +22,8 @@
       "matches": ["https://scratch.mit.edu/projects/*"]
     }
   ],
-  "settings": [
-    {
-      "name": "Hide settings button when no controllers detected",
-      "type": "boolean",
-      "default": false,
-      "id": "hide"
-    }
-  ],
-  "tags": ["editor", "projectPlayer", "recommended"],
-  "enabledByDefault": false,
+  "tags": ["editor", "beta"],
   "versionAdded": "1.14.0",
-  "dynamicEnable": true,
-  "dynamicDisable": true
+  "enabledByDefault": false,
+  "l10n": true
 }

@@ -8,7 +8,7 @@
       "runAtComplete": false
     }
   ],
-  "versionAdded": "1.0.0",
   "tags": ["forums", "community"],
-  "enabledByDefault": false
+  "enabledByDefault": false,
+  "l10n": true
 }

@@ -1,6 +1,6 @@
 {
-  "name": "Messages in editor",
-  "description": "Displays your message count in the editor.",
+  "name": "Scratch编辑器讯息按钮",
+  "description": "在您的编辑器上显示讯息按钮",
   "credits": [
     {
       "name": "TheColaber"
@@ -18,7 +18,7 @@
       "matches": ["https://scratch.mit.edu/projects/*"]
     }
   ],
-  "versionAdded": "1.4.0",
   "tags": ["editor", "editorMenuBar", "recommended"],
-  "enabledByDefault": false
+  "enabledByDefault": false,
+  "l10n": true
 }

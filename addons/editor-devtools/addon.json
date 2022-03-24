@@ -1,10 +1,10 @@
 {
-  "name": "Developer tools",
-  "description": "Adds a find box and new menu options to the editor: copy/paste blocks, better tidy up, go to custom block definition, and more!",
+  "name": "开发工具",
+  "description": "在Scratch编辑器中加入查找框和新菜单选项：复制/粘贴积木、更容易的整理、转到自定义块定义等。",
   "info": [
     {
       "type": "notice",
-      "text": "Press \"Ctrl+F\" to focus the find box, \"Ctrl+Space\" to bring up the \"add block by name\" popup, \"Ctrl+Left/Right\" to navigate find history.",
+      "text": "按“Ctrl+F”开始搜索, “Ctrl+空格”开启“由名称添加积木”页面，“Ctrl+左/右”查找历史记录。",
       "id": "shortcuts"
     }
   ],
@@ -15,19 +15,19 @@
   ],
   "settings": [
     {
-      "name": "Enhance \"Clean up Blocks\"",
+      "name": "增强版“整理积木”",
       "id": "enableCleanUpPlus",
       "type": "boolean",
       "default": true
     },
     {
-      "name": "Paste blocks at mouse cursor",
+      "name": "粘贴积木至光标位置",
       "id": "enablePasteBlocksAtMouse",
       "type": "boolean",
       "default": true
     },
     {
-      "name": "Middle mouse click variables, custom blocks or events to navigate",
+      "name": "鼠标中键可以导航变量、自定义块或事件",
       "id": "enableMiddleClickFinder",
       "type": "boolean",
       "default": true
@@ -45,7 +45,7 @@
       "matches": ["https://scratch.mit.edu/projects/*"]
     }
   ],
-  "versionAdded": "1.0.0",
   "tags": ["editor", "codeEditor", "costumeEditor", "recommended"],
-  "enabledByDefault": true
+  "enabledByDefault": true,
+  "l10n": true
 }

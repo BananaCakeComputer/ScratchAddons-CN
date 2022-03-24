@@ -26,7 +26,6 @@
       "matches": ["https://scratch.mit.edu/projects/*"]
     }
   ],
-  "versionAdded": "1.8.0",
   "settings": [
     {
       "name": "Toggle on...",
@@ -73,5 +72,6 @@
       "default": "default"
     }
   ],
-  "tags": ["editor", "codeEditor", "recommended"]
+  "tags": ["editor", "codeEditor", "recommended"],
+  "l10n": true
 }

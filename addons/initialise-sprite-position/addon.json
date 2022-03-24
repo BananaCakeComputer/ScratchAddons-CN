@@ -37,7 +37,7 @@
       "default": false
     }
   ],
-  "versionAdded": "1.13.0",
   "tags": ["editor"],
-  "enabledByDefault": false
+  "enabledByDefault": false,
+  "l10n": true
 }
