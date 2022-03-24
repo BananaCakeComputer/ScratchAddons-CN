@@ -1,6 +1,6 @@
 {
-  "name": "Copy link to comment button",
-  "description": "Adds a \"Copy Link\" button to all Scratch comments, next to the \"Report\" button.",
+  "name": "复制评论链接按钮",
+  "description": "在“回复”按钮旁给所有评论添加“复制链接“按钮”。",
   "credits": [
     {
       "name": "Sly-Little-Fox",
@@ -15,17 +15,17 @@
     },
     {
       "url": "project.js",
-      "matches": ["https://scratch.mit.edu/projects/*", "https://scratch.mit.edu/studios_www/*"],
+      "matches": ["https://scratch.mit.edu/projects/*"],
       "runAtComplete": false
     }
   ],
   "userstyles": [
     {
       "url": "project.css",
-      "matches": ["https://scratch.mit.edu/projects/*", "https://scratch.mit.edu/studios_www/*"]
+      "matches": ["https://scratch.mit.edu/projects/*"]
     }
   ],
-  "versionAdded": "1.10.0",
   "tags": ["community", "comments", "recommended"],
+  "l10n": true,
   "enabledByDefault": false
 }

@@ -1,6 +1,6 @@
 {
-  "name": "Save blocks as image",
-  "description": "Right click the editor workspace to export blocks as SVG/PNG images.",
+  "name": "生成积木图片",
+  "description": "右键脚本区将积木保存为SVG或PNG图像。",
   "tags": ["editor", "codeEditor"],
   "credits": [
     {
@@ -14,6 +14,6 @@
       "matches": ["https://scratch.mit.edu/projects/*"]
     }
   ],
-  "versionAdded": "1.13.0",
-  "enabledByDefault": false
+  "enabledByDefault": false,
+  "l10n": true
 }

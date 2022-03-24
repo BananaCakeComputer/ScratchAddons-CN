@@ -1,6 +1,6 @@
 {
-  "name": "Editor dark mode and customizable colors",
-  "description": "Customize colors used by the project editor. Multiple dark themes by different authors available. If you don't need dark mode but want to change the default colors you can select the \"Scratch's default colors\" preset and tweak it.",
+  "name": "Scratch编辑器深色主题与自定义颜色",
+  "description": "自定义Scratch编辑器使用的颜色，由不同的贡献者提供的多种黑暗的主题。如果你不需要深色模式，但想改变颜色主题，可以通过“预制设定”中的“Scratch默认颜色”选项调整它。",
   "credits": [
     {
       "name": "Maximouse (addon, \"Experimental\" Dark)",
@@ -15,588 +15,22 @@
       "link": "https://github.com/towerofnix"
     }
   ],
-  "customCssVariables": [
-    {
-      "name": "page-text",
-      "value": {
-        "type": "textColor",
-        "source": {
-          "type": "settingValue",
-          "settingId": "page"
-        }
-      }
-    },
-    {
-      "name": "page-transparentText",
-      "value": {
-        "type": "textColor",
-        "black": "rgba(87, 94, 117, 0.75)",
-        "white": "rgba(255, 255, 255, 0.75)",
-        "source": {
-          "type": "settingValue",
-          "settingId": "page"
-        }
-      }
-    },
-    {
-      "name": "page-tabHoverFilter",
-      "value": {
-        "type": "textColor",
-        "black": "grayscale(100%)",
-        "white": "brightness(0) invert(1) opacity(0.75)",
-        "source": {
-          "type": "settingValue",
-          "settingId": "page"
-        }
-      }
-    },
-    {
-      "name": "primary-text",
-      "value": {
-        "type": "textColor",
-        "source": {
-          "type": "settingValue",
-          "settingId": "primary"
-        }
-      }
-    },
-    {
-      "name": "primary-filter",
-      "value": {
-        "type": "textColor",
-        "black": "brightness(0.4)",
-        "white": "none",
-        "source": {
-          "type": "settingValue",
-          "settingId": "primary"
-        }
-      }
-    },
-    {
-      "name": "primary-filter2",
-      "value": {
-        "type": "textColor",
-        "black": "none",
-        "white": "brightness(0) invert(1)",
-        "source": {
-          "type": "settingValue",
-          "settingId": "primary"
-        }
-      }
-    },
-    {
-      "name": "primary-iconFilter",
-      "value": {
-        "type": "recolorFilter",
-        "source": {
-          "type": "settingValue",
-          "settingId": "primary"
-        }
-      }
-    },
-    {
-      "name": "primary-transparent35",
-      "value": {
-        "type": "multiply",
-        "source": {
-          "type": "settingValue",
-          "settingId": "primary"
-        },
-        "a": 0.35
-      }
-    },
-    {
-      "name": "primary-transparent25",
-      "value": {
-        "type": "multiply",
-        "source": {
-          "type": "settingValue",
-          "settingId": "primary"
-        },
-        "a": 0.25
-      }
-    },
-    {
-      "name": "primary-transparent20",
-      "value": {
-        "type": "multiply",
-        "source": {
-          "type": "settingValue",
-          "settingId": "primary"
-        },
-        "a": 0.2
-      }
-    },
-    {
-      "name": "primary-transparent15",
-      "value": {
-        "type": "multiply",
-        "source": {
-          "type": "settingValue",
-          "settingId": "primary"
-        },
-        "a": 0.15
-      }
-    },
-    {
-      "name": "primary-overlay",
-      "value": {
-        "type": "multiply",
-        "source": {
-          "type": "settingValue",
-          "settingId": "primary"
-        },
-        "a": 0.9
-      }
-    },
-    {
-      "name": "primary-variant",
-      "value": {
-        "type": "textColor",
-        "source": {
-          "type": "settingValue",
-          "settingId": "primary"
-        },
-        "black": {
-          "type": "multiply",
-          "source": {
-            "type": "settingValue",
-            "settingId": "primary"
-          },
-          "r": 0.66,
-          "g": 0.76,
-          "b": 0.8
-        },
-        "white": {
-          "type": "brighten",
-          "source": {
-            "type": "settingValue",
-            "settingId": "primary"
-          },
-          "r": 0.75,
-          "g": 0.75,
-          "b": 0.75
-        },
-        "threshold": 60
-      }
-    },
-    {
-      "name": "highlightText-iconFilter",
-      "value": {
-        "type": "recolorFilter",
-        "source": {
-          "type": "settingValue",
-          "settingId": "highlightText"
-        }
-      }
-    },
-    {
-      "name": "menuBar-text",
-      "value": {
-        "type": "textColor",
-        "source": {
-          "type": "settingValue",
-          "settingId": "menuBar"
-        }
-      }
-    },
-    {
-      "name": "menuBar-transparentText",
-      "value": {
-        "type": "textColor",
-        "black": "rgba(87, 94, 117, 0.25)",
-        "white": "rgba(255, 255, 255, 0.25)",
-        "source": {
-          "type": "settingValue",
-          "settingId": "menuBar"
-        }
-      }
-    },
-    {
-      "name": "menuBar-dimText",
-      "value": {
-        "type": "textColor",
-        "black": "rgba(87, 94, 117, 0.75)",
-        "white": "rgba(255, 255, 255, 0.75)",
-        "source": {
-          "type": "settingValue",
-          "settingId": "menuBar"
-        }
-      }
-    },
-    {
-      "name": "menuBar-filter",
-      "value": {
-        "type": "textColor",
-        "black": "brightness(0.4)",
-        "white": "none",
-        "source": {
-          "type": "settingValue",
-          "settingId": "menuBar"
-        }
-      }
-    },
-    {
-      "name": "menuBar-border",
-      "value": {
-        "type": "textColor",
-        "black": "rgba(0, 0, 0, 0.15)",
-        "white": "rgba(255, 255, 255, 0.15)",
-        "threshold": 60,
-        "source": {
-          "type": "settingValue",
-          "settingId": "menuBar"
-        }
-      }
-    },
-    {
-      "name": "tab-text",
-      "value": {
-        "type": "textColor",
-        "black": "rgba(87, 94, 117, 0.75)",
-        "white": "rgba(255, 255, 255, 0.75)",
-        "source": {
-          "type": "settingValue",
-          "settingId": "tab"
-        }
-      }
-    },
-    {
-      "name": "tab-filter",
-      "value": {
-        "type": "textColor",
-        "black": "grayscale(100%)",
-        "white": "brightness(0) invert(1) opacity(0.75)",
-        "source": {
-          "type": "settingValue",
-          "settingId": "tab"
-        }
-      }
-    },
-    {
-      "name": "selector-text",
-      "value": {
-        "type": "textColor",
-        "source": {
-          "type": "settingValue",
-          "settingId": "selector"
-        }
-      }
-    },
-    {
-      "name": "selector2-text",
-      "value": {
-        "type": "textColor",
-        "source": {
-          "type": "settingValue",
-          "settingId": "selector2"
-        }
-      }
-    },
-    {
-      "name": "selector2-filter",
-      "value": {
-        "type": "textColor",
-        "black": "none",
-        "white": "brightness(0) invert(1)",
-        "source": {
-          "type": "settingValue",
-          "settingId": "selector2"
-        }
-      }
-    },
-    {
-      "name": "selectorSelection-text",
-      "value": {
-        "type": "textColor",
-        "source": {
-          "type": "settingValue",
-          "settingId": "selectorSelection"
-        }
-      }
-    },
-    {
-      "name": "selectorSelection-filter",
-      "value": {
-        "type": "textColor",
-        "black": "none",
-        "white": "brightness(0) invert(1)",
-        "source": {
-          "type": "settingValue",
-          "settingId": "selectorSelection"
-        }
-      }
-    },
-    {
-      "name": "accent-text",
-      "value": {
-        "type": "textColor",
-        "source": {
-          "type": "settingValue",
-          "settingId": "accent"
-        }
-      }
-    },
-    {
-      "name": "accent-filter",
-      "value": {
-        "type": "textColor",
-        "black": "none",
-        "white": "brightness(0) invert(1)",
-        "source": {
-          "type": "settingValue",
-          "settingId": "accent"
-        }
-      }
-    },
-    {
-      "name": "accent-desaturateFilter",
-      "value": {
-        "type": "textColor",
-        "black": "saturate(0)",
-        "white": "brightness(0) invert(1) opacity(0.7)",
-        "source": {
-          "type": "settingValue",
-          "settingId": "accent"
-        }
-      }
-    },
-    {
-      "name": "accent-opacity0",
-      "value": {
-        "type": "multiply",
-        "source": {
-          "type": "settingValue",
-          "settingId": "accent"
-        },
-        "a": 0
-      }
-    },
-    {
-      "name": "input-text",
-      "value": {
-        "type": "textColor",
-        "source": {
-          "type": "settingValue",
-          "settingId": "input"
-        }
-      }
-    },
-    {
-      "name": "input-transparentText",
-      "value": {
-        "type": "textColor",
-        "black": "rgba(87, 94, 117, 0.6)",
-        "white": "rgba(255, 255, 255, 0.4)",
-        "source": {
-          "type": "settingValue",
-          "settingId": "input"
-        }
-      }
-    },
-    {
-      "name": "input-filter",
-      "value": {
-        "type": "textColor",
-        "black": "none",
-        "white": "brightness(0) invert(1)",
-        "source": {
-          "type": "settingValue",
-          "settingId": "input"
-        }
-      }
-    },
-    {
-      "name": "input-transparent50",
-      "value": {
-        "type": "multiply",
-        "source": {
-          "type": "settingValue",
-          "settingId": "input"
-        },
-        "a": 0.5
-      }
-    },
-    {
-      "name": "input-transparent25",
-      "value": {
-        "type": "multiply",
-        "source": {
-          "type": "settingValue",
-          "settingId": "input"
-        },
-        "a": 0.25
-      }
-    },
-    {
-      "name": "workspace-codeZoomFilter",
-      "value": {
-        "type": "textColor",
-        "black": "none",
-        "white": "invert(1) hue-rotate(180deg)",
-        "source": {
-          "type": "settingValue",
-          "settingId": "workspace"
-        }
-      }
-    },
-    {
-      "name": "workspace-scrollbar",
-      "value": {
-        "type": "textColor",
-        "source": {
-          "type": "settingValue",
-          "settingId": "workspace"
-        },
-        "black": {
-          "type": "multiply",
-          "source": {
-            "type": "settingValue",
-            "settingId": "workspace"
-          },
-          "r": 0.83,
-          "g": 0.83,
-          "b": 0.83
-        },
-        "white": {
-          "type": "brighten",
-          "source": {
-            "type": "settingValue",
-            "settingId": "workspace"
-          },
-          "r": 0.87,
-          "g": 0.87,
-          "b": 0.87
-        },
-        "threshold": 110
-      }
-    },
-    {
-      "name": "workspace-dots",
-      "value": {
-        "type": "textColor",
-        "black": "rgba(0, 0, 0, 0.13)",
-        "white": "rgba(255, 255, 255, 0.13)",
-        "source": {
-          "type": "settingValue",
-          "settingId": "workspace"
-        }
-      }
-    },
-    {
-      "name": "categoryMenu-text",
-      "value": {
-        "type": "textColor",
-        "source": {
-          "type": "settingValue",
-          "settingId": "categoryMenu"
-        }
-      }
-    },
-    {
-      "name": "categoryMenu-selection",
-      "value": {
-        "type": "textColor",
-        "black": "rgba(87, 124, 155, 0.13)",
-        "white": "rgba(255, 255, 255, 0.05)",
-        "source": {
-          "type": "settingValue",
-          "settingId": "categoryMenu"
-        }
-      }
-    },
-    {
-      "name": "palette-text",
-      "value": {
-        "type": "textColor",
-        "source": {
-          "type": "settingValue",
-          "settingId": "palette"
-        }
-      }
-    },
-    {
-      "name": "palette-filter",
-      "value": {
-        "type": "textColor",
-        "black": "none",
-        "white": "brightness(0) invert(1)",
-        "source": {
-          "type": "settingValue",
-          "settingId": "palette"
-        }
-      }
-    },
-    {
-      "name": "palette-scrollbar",
-      "value": {
-        "type": "textColor",
-        "source": {
-          "type": "alphaBlend",
-          "opaqueSource": {
-            "type": "settingValue",
-            "settingId": "workspace"
-          },
-          "transparentSource": {
-            "type": "multiply",
-            "source": {
-              "type": "settingValue",
-              "settingId": "palette"
-            },
-            "a": 0.8
-          }
-        },
-        "black": {
-          "type": "multiply",
-          "source": {
-            "type": "alphaBlend",
-            "opaqueSource": {
-              "type": "settingValue",
-              "settingId": "workspace"
-            },
-            "transparentSource": {
-              "type": "multiply",
-              "source": {
-                "type": "settingValue",
-                "settingId": "palette"
-              },
-              "a": 0.8
-            }
-          },
-          "r": 0.83,
-          "g": 0.83,
-          "b": 0.83
-        },
-        "white": {
-          "type": "brighten",
-          "source": {
-            "type": "alphaBlend",
-            "opaqueSource": {
-              "type": "settingValue",
-              "settingId": "workspace"
-            },
-            "transparentSource": {
-              "type": "multiply",
-              "source": {
-                "type": "settingValue",
-                "settingId": "palette"
-              },
-              "a": 0.8
-            }
-          },
-          "r": 0.91,
-          "g": 0.91,
-          "b": 0.91
-        },
-        "threshold": 110
-      }
-    }
-  ],
   "dynamicEnable": true,
   "dynamicDisable": true,
   "injectAsStyleElt": true,
-  "versionAdded": "1.0.0",
   "updateUserstylesOnSettingsChange": true,
+  "userscripts": [
+    {
+      "url": "text_color.js",
+      "matches": [
+        "https://scratch.mit.edu/projects/*/",
+        "https://scratch.mit.edu/projects/*/editor",
+        "https://scratch.mit.edu/projects/*/fullscreen",
+        "https://scratch.mit.edu/projects/editor"
+      ],
+      "runAtComplete": false
+    }
+  ],
   "userstyles": [
     {
       "url": "experimental_editor.css",
@@ -617,32 +51,6 @@
       ],
       "settingMatch": {
         "id": "textShadow",
-        "value": true
-      }
-    },
-    {
-      "url": "hide_dots.css",
-      "matches": [
-        "https://scratch.mit.edu/projects/*/",
-        "https://scratch.mit.edu/projects/*/editor",
-        "https://scratch.mit.edu/projects/*/fullscreen",
-        "https://scratch.mit.edu/projects/editor"
-      ],
-      "settingMatch": {
-        "id": "dots",
-        "value": false
-      }
-    },
-    {
-      "url": "stage.css",
-      "matches": [
-        "https://scratch.mit.edu/projects/*/",
-        "https://scratch.mit.edu/projects/*/editor",
-        "https://scratch.mit.edu/projects/*/fullscreen",
-        "https://scratch.mit.edu/projects/editor"
-      ],
-      "settingMatch": {
-        "id": "affectStage",
         "value": true
       }
     },
@@ -675,134 +83,122 @@
   ],
   "settings": [
     {
-      "name": "Page background",
+      "name": "页面背景",
       "id": "page",
       "type": "color",
       "default": "#111111"
     },
     {
-      "name": "Highlight color",
+      "name": "高光颜色",
       "id": "primary",
       "type": "color",
       "default": "#4d97ff"
     },
     {
-      "name": "Text and icon highlight color",
-      "id": "highlightText",
-      "type": "color",
-      "default": "#4d97ff"
-    },
-    {
-      "name": "Menu bar background",
+      "name": "顶部导航栏背景",
       "id": "menuBar",
       "type": "color",
       "default": "#202020"
     },
     {
-      "name": "Active tab background",
+      "name": "选中的标签背景",
       "id": "activeTab",
       "type": "color",
       "default": "#202020"
     },
     {
-      "name": "Inactive tab background",
+      "name": "非选中的标签背景",
       "id": "tab",
       "type": "color",
       "default": "#151515"
     },
     {
-      "name": "Sprite pane background",
+      "name": "角色列表背景",
       "id": "selector",
       "type": "color",
       "default": "#202020"
     },
     {
-      "name": "Asset list background",
+      "name": "资源列表背景",
       "id": "selector2",
       "type": "color",
       "default": "#202020"
     },
     {
-      "name": "Selected sprite/asset background",
+      "name": "选中的角色/资源卡片背景",
       "id": "selectorSelection",
       "type": "color",
       "default": "#111111"
     },
     {
-      "name": "Accent background",
+      "name": "图片/声音编辑器背景",
       "id": "accent",
       "type": "color",
       "default": "#151515"
     },
     {
-      "name": "Input background",
+      "name": "输入框背景",
       "id": "input",
       "type": "color",
       "default": "#202020"
     },
     {
-      "name": "Workspace background",
+      "name": "编辑器积木区背景",
       "id": "workspace",
       "type": "color",
       "default": "#151515"
     },
     {
-      "name": "Block category menu background",
+      "name": "积木种类菜单背景",
       "id": "categoryMenu",
       "type": "color",
       "default": "#202020"
     },
     {
-      "name": "Block palette background",
+      "name": "积木栏背景",
       "id": "palette",
       "type": "color",
       "default": "#202020"
     },
     {
-      "name": "Full screen background",
+      "name": "全屏背景",
       "id": "fullscreen",
       "type": "color",
       "default": "#000000"
     },
     {
-      "name": "Full screen header background",
+      "name": "全屏顶部栏背景",
       "id": "stageHeader",
       "type": "color",
       "default": "#000000"
     },
     {
-      "name": "Border color",
+      "name": "边框颜色",
       "id": "border",
       "type": "color",
       "default": "#ffffff0d",
       "allowTransparency": true
     },
     {
-      "name": "Show workspace dots",
+      "name": "显示积木区斑点",
       "id": "dots",
       "type": "boolean",
       "default": false
     },
     {
-      "name": "Text shadow on blocks",
+      "name": "显示积木上文字的影子",
       "id": "textShadow",
       "type": "boolean",
       "default": false
     },
     {
-      "name": "Change the colors of variables, lists, and answer inputs on the stage",
-      "id": "affectStage",
-      "type": "boolean",
-      "default": false
-    },
-    {
-      "name": "Dark comments",
+      "name": "深色注释",
       "id": "darkComments",
       "type": "boolean",
       "default": true
     },
     {
-      "name": "Dark scrollbars",
+      "name": "深色滚轮",
       "id": "darkScrollbars",
       "type": "boolean",
       "default": true
@@ -812,11 +208,10 @@
     {
       "name": "3.Darker",
       "id": "3darker",
-      "description": "A dark theme based on a userscript by infinitytec",
+      "description": "infinitytec的深色主题",
       "values": {
         "page": "#111111",
         "primary": "#4d97ff",
-        "highlightText": "#4d97ff",
         "menuBar": "#202020",
         "activeTab": "#202020",
         "tab": "#151515",
@@ -840,11 +235,10 @@
     {
       "name": "3.Dark",
       "id": "3dark",
-      "description": "A dark blue theme based on a userscript by infinitytec",
+      "description": "infinitytec的深色主题",
       "values": {
         "page": "#051638",
         "primary": "#4d97ff",
-        "highlightText": "#4d97ff",
         "menuBar": "#2f4066",
         "activeTab": "#2f4066",
         "tab": "#273552",
@@ -868,11 +262,10 @@
     {
       "name": "Dark Editor",
       "id": "darkEditor",
-      "description": "A dark theme based on a userstyle by _nix",
+      "description": "_nix的深色主题",
       "values": {
         "page": "#2e2e2e",
         "primary": "#47566b",
-        "highlightText": "#4d97ff",
         "menuBar": "#47566b",
         "activeTab": "#555555",
         "tab": "#444444",
@@ -896,11 +289,10 @@
     {
       "name": "\"Experimental\" Dark",
       "id": "experimentalDark",
-      "description": "A dark theme by Maximouse based on a userstyle. Not experimental",
+      "description": "Maximouse基于用户喜好的深色主题",
       "values": {
         "page": "#001533",
         "primary": "#4d97ff",
-        "highlightText": "#4d97ff",
         "menuBar": "#4d97ff",
         "activeTab": "#282828",
         "tab": "#192f4d",
@@ -922,13 +314,12 @@
       }
     },
     {
-      "name": "Scratch's default colors",
+      "name": "Scratch默认颜色",
       "id": "scratch",
-      "description": "The colors normally used by Scratch",
+      "description": "Scratch的默认主题",
       "values": {
         "page": "#e5f0ff",
         "primary": "#4d97ff",
-        "highlightText": "#4d97ff",
         "menuBar": "#4d97ff",
         "activeTab": "#ffffff",
         "tab": "#d9e3f2",
@@ -951,5 +342,6 @@
     }
   ],
   "tags": ["editor", "theme", "recommended"],
-  "enabledByDefault": false
+  "enabledByDefault": false,
+  "l10n": true
 }

@@ -1,6 +1,6 @@
 {
-  "name": "Confirm actions",
-  "description": "Asks if you're sure when committing actions under your Scratch account, such as sharing projects. ",
+  "name": "确认提示",
+  "description": "在Scratch账号进行提交操作时，询问您是否确认操作，例如分享项目。",
   "credits": [
     {
       "name": "TheColaber",
@@ -9,7 +9,6 @@
   ],
   "dynamicEnable": true,
   "dynamicDisable": true,
-  "versionAdded": "1.4.0",
   "userscripts": [
     {
       "url": "userscript.js",
@@ -19,30 +18,25 @@
   ],
   "settings": [
     {
-      "name": "Confirm project sharing",
+      "name": "分享项目时提示",
       "id": "projectsharing",
       "type": "boolean",
       "default": true
     },
     {
-      "name": "Confirm following/unfollowing users",
+      "name": "关注/取消关注时提示",
       "id": "followinguser",
       "type": "boolean",
       "default": false
     },
     {
-      "name": "Confirm joining studios",
+      "name": "加入工作室时提示",
       "id": "joiningstudio",
-      "type": "boolean",
-      "default": false
-    },
-    {
-      "name": "Confirm closing forum topics",
-      "id": "closingtopic",
       "type": "boolean",
       "default": false
     }
   ],
-  "tags": ["community", "recommended"],
-  "enabledByDefault": false
+  "tags": ["community", "recommended", "studios"],
+  "enabledByDefault": false,
+  "l10n": true
 }

@@ -1,6 +1,6 @@
 {
-  "name": "Drag and drop files",
-  "description": "Lets you drag images and sounds from your file explorer into the sprites pane or costume/sound list. You can also drag text files into lists or \"ask and wait\" prompts.",
+  "name": "拖动文件上传",
+  "description": "让您的图片和音乐文件可以从您的文件资源管理器拖动制角色的造型/声音区域。您还可以将纯文本文件拖动至“询问并等待”对话框中。",
   "credits": [
     {
       "name": "Sheep_maker"
@@ -18,7 +18,7 @@
       "matches": ["https://scratch.mit.edu/projects/*"]
     }
   ],
-  "versionAdded": "1.12.0",
   "tags": ["editor", "recommended"],
-  "enabledByDefault": false
+  "enabledByDefault": false,
+  "l10n": true
 }

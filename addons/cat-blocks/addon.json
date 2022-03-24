@@ -1,6 +1,6 @@
 {
-  "name": "Cat blocks",
-  "description": "Brings back editor cat hat blocks from April Fools 2020.",
+  "name": "“猫”木",
+  "description": "将积木样式换成2020年愚人节的猫头积木。",
   "credits": [
     {
       "name": "TheColaber",
@@ -19,20 +19,21 @@
   "info": [
     {
       "type": "warning",
-      "text": "The \"Watch mouse cursor\" option may impact performance when the editor is open.",
+      "text": "“看向鼠标”功能在Scratch编辑器打开时可能会影响性能",
       "id": "watch"
     }
   ],
   "settings": [
     {
       "id": "watch",
-      "name": "Watch mouse cursor",
+      "name": "看向鼠标",
       "default": false,
       "type": "boolean"
     }
   ],
-  "versionAdded": "1.14.0",
   "tags": ["editor", "codeEditor"],
+  "versionAdded": "1.14.0",
   "enabledByDefault": false,
-  "libraries": ["scratch-blocks"]
+  "libraries": ["scratch-blocks"],
+  "l10n": true
 }

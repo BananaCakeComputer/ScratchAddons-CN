@@ -1,6 +1,6 @@
 {
-  "name": "Custom block shape",
-  "description": "Adjust the padding, corner radius, and notch height of Scratch blocks.",
+  "name": "积木外形自定义",
+  "description": "调整Scratch积木大小，边缘弧度和卡槽高度",
   "tags": ["editor", "codeEditor", "theme", "recommended"],
   "credits": [
     {
@@ -16,7 +16,6 @@
       "link": "https://scratch.mit.edu/users/GarboMuffin"
     }
   ],
-  "versionAdded": "1.12.0",
   "enabledByDefault": false,
   "userscripts": [
     {
@@ -27,13 +26,13 @@
   "info": [
     {
       "type": "warning",
-      "text": "Decreasing the padding size is only visible to you, so when your projects are viewed by other users, your scripts may overlap.",
+      "text": "减小填充大小仅对您可见，因此当其他人查看您的项目时，您的积木可能会被折叠。",
       "id": "paddingWarning"
     }
   ],
   "settings": [
     {
-      "name": "Padding size (50-200%)",
+      "name": "大小 (50-200%)",
       "id": "paddingSize",
       "type": "integer",
       "min": 50,
@@ -41,7 +40,7 @@
       "max": 200
     },
     {
-      "name": "Corner size (0-300%)",
+      "name": "边缘弧度 (0-300%)",
       "id": "cornerSize",
       "type": "integer",
       "min": 0,
@@ -49,7 +48,7 @@
       "max": 300
     },
     {
-      "name": "Notch height (0-150%)",
+      "name": "卡槽高度 (0-150%)",
       "id": "notchSize",
       "type": "integer",
       "min": 0,
@@ -59,9 +58,9 @@
   ],
   "presets": [
     {
-      "name": "3.0 Blocks",
+      "name": "Scratch 3.0积木",
       "id": "default3",
-      "description": "The regular appearance of Scratch 3.0 blocks",
+      "description": "Scratch 3.0积木预设样式",
       "values": {
         "paddingSize": 100,
         "cornerSize": 100,
@@ -69,9 +68,9 @@
       }
     },
     {
-      "name": "2.0 Blocks",
+      "name": "Scratch 2.0积木",
       "id": "default2",
-      "description": "An appearance similar to Scratch 2.0 blocks",
+      "description": "仿制Scratch 2.0积木样式",
       "values": {
         "paddingSize": 70,
         "cornerSize": 150,
@@ -79,9 +78,9 @@
       }
     },
     {
-      "name": "3.0 Flat",
+      "name": "Scratch 3.0方块",
       "id": "flat3",
-      "description": "Scratch 3.0 blocks with notches and corners removed",
+      "description": "消除边缘和卡槽Scratch 3.0积木",
       "values": {
         "paddingSize": 100,
         "cornerSize": 0,
@@ -89,14 +88,15 @@
       }
     },
     {
-      "name": "2.0 Flat",
+      "name": "Scratch 2.0方块",
       "id": "flat2",
-      "description": "Scratch 2.0 blocks with notches and corners removed",
+      "description": "消除边缘和卡槽Scratch 2.0积木",
       "values": {
         "paddingSize": 70,
         "cornerSize": 0,
         "notchSize": 0
       }
     }
-  ]
+  ],
+  "l10n": true
 }

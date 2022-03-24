@@ -1,6 +1,6 @@
 {
-  "name": "Custom scripts area zoom settings",
-  "description": "Adjust the minimum, maximum, speed, and start size of the zoom in the project code editor, and autohide the controls.",
+  "name": "自定义脚本区域缩放",
+  "description": "调整积木最小大小，最大大小，每次缩放变化大小，初始化积木大小和自动隐藏按钮设置。",
   "tags": ["editor", "codeEditor"],
   "credits": [
     {
@@ -8,7 +8,6 @@
       "link": "https://scratch.mit.edu/users/ErrorGamer2000/"
     }
   ],
-  "versionAdded": "1.13.0",
   "enabledByDefault": false,
   "userscripts": [
     {
@@ -24,7 +23,7 @@
   ],
   "settings": [
     {
-      "name": "Maximum Zoom (50-500%)",
+      "name": "最大大小 (100-500%)",
       "id": "maxZoom",
       "type": "integer",
       "min": 100,
@@ -32,7 +31,7 @@
       "max": 500
     },
     {
-      "name": "Minimum Zoom (1-100%)",
+      "name": "最小大小 (1-100%)",
       "id": "minZoom",
       "type": "integer",
       "min": 1,
@@ -40,7 +39,7 @@
       "max": 100
     },
     {
-      "name": "Start Zoom (50-500%)",
+      "name": "初始化积木大小 (50-500%)",
       "id": "startZoom",
       "type": "integer",
       "min": 50,
@@ -48,7 +47,7 @@
       "max": 500
     },
     {
-      "name": "Zoom Speed (50-200%)",
+      "name": "每次缩放大小 (50-200%)",
       "id": "zoomSpeed",
       "type": "integer",
       "min": 50,
@@ -56,34 +55,35 @@
       "max": 200
     },
     {
-      "name": "Autohide Zoom Controls",
+      "name": "自动隐藏按键",
       "id": "autohide",
       "type": "boolean",
       "default": false
     },
     {
-      "name": "Autohide Animation duration",
+      "name": "自动隐藏持续时间",
       "id": "speed",
       "type": "select",
       "potentialValues": [
         {
           "id": "none",
-          "name": "None"
+          "name": "无"
         },
         {
           "id": "short",
-          "name": "Short"
+          "name": "短"
         },
         {
           "id": "default",
-          "name": "Default"
+          "name": "默认"
         },
         {
           "id": "long",
-          "name": "Long"
+          "name": "久"
         }
       ],
       "default": "default"
     }
-  ]
+  ],
+  "l10n": true
 }

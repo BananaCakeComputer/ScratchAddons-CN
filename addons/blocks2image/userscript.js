@@ -1,9 +1,9 @@
 export default async function ({ addon, global, console, msg }) {
   const buttonItem = [
-    msg("export_selected_to_SVG"),
-    msg("export_all_to_SVG"),
-    msg("export_selected_to_PNG"),
-    msg("export_all_to_PNG"),
+    "将选择的积木保存为SVG图像",
+    "将所有积木保存为SVG图像",
+    "将选择的积木保存为PNG图像",
+    "将所有积木保存为PNG图像",
   ];
 
   function eventMouseDown(e) {
@@ -27,14 +27,13 @@ export default async function ({ addon, global, console, msg }) {
                 const wrapperItem = document.createElement("div");
                 wrapperItem.id = `blocks2imgCommand${index + 1}`;
                 wrapperItem.classList.add("goog-menuitem", "blocks2img");
-                if (addon.tab.direction === "rtl") wrapperItem.classList.add("goog-menuitem-rtl");
                 wrapperItem.onmouseenter = () => wrapperItem.classList.add("goog-menuitem-highlight");
                 wrapperItem.onmouseleave = () => wrapperItem.classList.remove("goog-menuitem-highlight");
                 wrapperItem.style.userSelect = "none";
                 if (index === 0) {
                   wrapperItem.style.borderTop = "1px solid hsla(0, 0%, 0%, 0.15)";
                   // resolve borderTop style conflict with goog-menuitem-highlight class
-                  wrapperItem.style.borderBottom = "none";
+                  wrapperItem.style.borderBottom = "1px solid transparent";
                   wrapperItem.style.paddingTop = "4px";
                   wrapperItem.style.paddingBottom = "3px";
                 }

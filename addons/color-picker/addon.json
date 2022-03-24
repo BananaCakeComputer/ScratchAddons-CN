@@ -1,6 +1,6 @@
 {
-  "name": "Hex color picker",
-  "description": "Adds hex code inputs to color pickers.",
+  "name": "Hex颜色选择器",
+  "description": "在颜色选择器中加入对16进制颜色值的支持。",
   "tags": ["editor", "costumeEditor", "recommended"],
   "credits": [
     {
@@ -23,7 +23,7 @@
       "matches": ["https://scratch.mit.edu/projects/*"]
     }
   ],
-  "versionAdded": "1.6.0",
   "libraries": ["tinycolor2"],
-  "enabledByDefault": false
+  "enabledByDefault": false,
+  "l10n": true
 }

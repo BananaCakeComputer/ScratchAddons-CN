@@ -1,6 +1,6 @@
 {
-  "name": "Colored context menus",
-  "description": "Makes the editor context menus colorful when right-clicking a block.",
+  "name": "彩色菜单",
+  "description": "当右键一块积木时，把菜单添上颜色。",
   "credits": [
     {
       "name": "GarboMuffin"
@@ -8,7 +8,6 @@
   ],
   "dynamicEnable": true,
   "dynamicDisable": true,
-  "versionAdded": "1.0.0",
   "injectAsStyleElt": true,
   "userscripts": [
     {
@@ -23,5 +22,6 @@
     }
   ],
   "tags": ["editor", "codeEditor", "theme"],
-  "enabledByDefault": false
+  "enabledByDefault": false,
+  "l10n": true
 }

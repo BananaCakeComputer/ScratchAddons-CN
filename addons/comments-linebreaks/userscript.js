@@ -1,12 +1,6 @@
 export default async function ({ addon, global, console }) {
   while (true) {
-    let comment = await addon.tab.waitForElement(".comment .content, .comment-content", {
-      markAsSeen: true,
-      reduxCondition: (state) => {
-        if (!state.scratchGui) return true;
-        return state.scratchGui.mode.isPlayerOnly;
-      },
-    });
+    let comment = await addon.tab.waitForElement(".comment .content, .comment-content", { markAsSeen: true });
     comment.style.whiteSpace = "break-spaces";
     if (!comment.classList.contains("comment-content")) {
       let nodes = comment.childNodes;

@@ -1,6 +1,6 @@
 {
-  "name": "Cloud games",
-  "description": "Available when clicking the Scratch Addons icon. Shows you how many Scratchers are currently on multiplayer projects, and their usernames.",
+  "name": "联机项目",
+  "description": "单击Scratch扩展图标，显示联机Scratch项目中当前有多少Scratcher及其用户名。",
   "credits": [
     {
       "name": "World_Languages"
@@ -11,9 +11,9 @@
   ],
   "popup": {
     "icon": "../../images/icons/cloud.svg",
-    "name": "Games"
+    "name": "游戏"
   },
   "tags": ["popup", "recommended"],
-  "versionAdded": "1.1.0",
-  "enabledByDefault": true
+  "enabledByDefault": true,
+  "l10n": true
 }

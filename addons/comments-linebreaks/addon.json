@@ -1,6 +1,6 @@
 {
-  "name": "Linebreaks in comments",
-  "description": "Shows the linebreaks (pressing enter) in comments.",
+  "name": "换行评论",
+  "description": "使有换行的评论（按Enter）可以正常显示。",
   "credits": [
     {
       "name": "TheColaber",
@@ -13,12 +13,11 @@
       "matches": [
         "https://scratch.mit.edu/users/*/",
         "https://scratch.mit.edu/projects/*",
-        "https://scratch.mit.edu/studios/*/comments",
-        "https://scratch.mit.edu/studios_www/*"
+        "https://scratch.mit.edu/studios/*/comments"
       ],
       "runAtComplete": false
     }
   ],
-  "versionAdded": "1.8.0",
-  "tags": ["community", "comments"]
+  "tags": ["community", "comments"],
+  "l10n": true
 }

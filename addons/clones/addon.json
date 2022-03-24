@@ -1,6 +1,6 @@
 {
-  "name": "Clone counter",
-  "description": "Adds a counter in the editor which shows the total amount of clones.",
+  "name": "克隆体计数器",
+  "description": "在编辑器舞台的上方显示克隆体数量。",
   "credits": [
     {
       "name": "Jeffalo"
@@ -8,7 +8,6 @@
   ],
   "dynamicEnable": true,
   "dynamicDisable": true,
-  "versionAdded": "1.2.0",
   "userscripts": [
     {
       "url": "userscript.js",
@@ -22,5 +21,6 @@
     }
   ],
   "tags": ["editor", "projectPlayer"],
-  "enabledByDefault": false
+  "enabledByDefault": false,
+  "l10n": true
 }

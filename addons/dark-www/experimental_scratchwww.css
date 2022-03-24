@@ -1,10 +1,10 @@
 html > body:not(.sa-body-editor),
-h1,
-h2,
-h3,
-h4,
-h5,
-p,
+body:not(.sa-body-editor) h1,
+body:not(.sa-body-editor) h2,
+body:not(.sa-body-editor) h3,
+body:not(.sa-body-editor) h4,
+body:not(.sa-body-editor) h5,
+body:not(.sa-body-editor) p,
 .news li p,
 a.social-messages-profile-link,
 .outer .sort-mode .select select,
@@ -14,7 +14,6 @@ a.social-messages-profile-link,
 .thumbnail .thumbnail-favorites,
 .thumbnail .thumbnail-remixes,
 .thumbnail .thumbnail-views,
-.studio-project-tile .studio-project-username,
 #footer,
 #donor,
 .subactions .share-date,
@@ -24,25 +23,10 @@ body:not(.sa-body-editor) .join-flow-title,
 .initiatives-section .initiatives-tools .subsection-tag.collaborator {
   color: #fff;
 }
-.sa-body-editor h1,
-.sa-body-editor h2,
-.sa-body-editor h3,
-.sa-body-editor h4,
-.sa-body-editor h5,
-.sa-body-editor p {
-  color: inherit;
-}
-.studio-page,
-.user-projects-modal .user-projects-modal-content {
-  background: #252c37;
-}
 #view,
-.crash-container,
 .outer #projectBox,
 .tips-getting-started,
-.tips-activity-guides,
-.studio-report-modal .studio-report-tile,
-.studio-report-modal .button:disabled {
+.tips-activity-guides {
   background: #202020;
 }
 .box .box-header,
@@ -54,8 +38,7 @@ body:not(.sa-body-editor) .join-flow-title,
 .credits .supporters,
 .download .installation,
 body:not(.sa-body-editor) .gender-radio-row,
-.wedo .banner,
-.studio-report-modal .studio-report-tile-header {
+.wedo .banner {
   background: #333;
 }
 .thumbnail .thumbnail-loves::before,
@@ -68,8 +51,6 @@ body:not(.sa-body-editor) .gender-radio-row,
 .project-views::before,
 img.tips-icon,
 .tabs li:not(.active) .tab-icon,
-.overflow-menu-container .overflow-menu-trigger img,
-.studio-info .studio-info-footer-stats div img,
 body:not(.sa-body-editor) .stage-header_stage-button-icon_3zzFK {
   filter: brightness(0) invert(1);
 }
@@ -96,9 +77,6 @@ body:not(.sa-body-editor) .button.white,
 .os-chooser,
 body:not(.sa-body-editor) .modal-content,
 .grid .thumbnail,
-.studio-project-tile,
-.studio-member-tile,
-.studio-activity .studio-messages-list,
 .ttt-tile,
 .about .body,
 .messages-social-list,
@@ -109,7 +87,6 @@ body:not(.sa-body-editor) .modal-content,
 .supporters-section .comment-text,
 .card,
 .extension-landing .project-card,
-.promote-modal .cancel-button,
 body:not(.sa-body-editor) .stage-header_stage-button_hkl9B {
   background: #282828;
 }
@@ -124,15 +101,10 @@ body:not(.sa-body-editor) .stage-header_stage-button_hkl9B {
 .tabs li:hover {
   border-bottom-color: rgba(255, 255, 255, 0.2);
 }
-.outer .categories li,
-.os-chooser .button,
-.studio-tab-nav li,
-.user-projects-modal .user-projects-modal-nav button {
+.outer .categories li {
   background-color: rgba(255, 255, 255, 0.1);
 }
 .outer .categories li:hover,
-.studio-tab-nav li:hover,
-.user-projects-modal .user-projects-modal-nav button:hover,
 .supporters-section .supporters-level hr {
   background-color: rgba(255, 255, 255, 0.2);
 }
@@ -140,13 +112,6 @@ body:not(.sa-body-editor) .stage-header_stage-button_hkl9B {
 .box .box-header,
 #footer, /* for infinite scrolling fixed footer */
 .textarea,
-.crash-container,
-.studio-adder-section .studio-adder-row input,
-.studio-adder-section .studio-adder-row .studio-adder-vertical-divider,
-.studio-tab-nav,
-.studio-project-tile,
-.studio-member-tile,
-.studio-activity .studio-messages-list,
 .news li:nth-child(even),
 .thumbnail .thumbnail-image img,
 .outer .sort-controls,
@@ -181,7 +146,6 @@ body:not(.sa-body-editor) .stage-header_stage-button_hkl9B {
 .inplace-input,
 .inplace-textarea,
 .textarea,
-.studio-adder-section input,
 .modal {
   background: #282828;
   color: #fff;
