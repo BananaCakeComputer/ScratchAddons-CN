@@ -63,7 +63,7 @@
     "message": "适用于网站"
   },
   "confirmPreset": {
-    "message": "您确定要加载此预置？"
+    "message": "您确定要设置为此预制设定？"
   },
   "confirmReset": {
     "message": "您确定要重新打开此功能？"
@@ -135,7 +135,7 @@
     "message": "刷新"
   },
   "creditTo": {
-    "message": "Credit to:"
+    "message": "贡献者："
   },
   "viewLicenses": {
     "message": "查看仓库许可证"
@@ -147,7 +147,7 @@
     "message": "默认"
   },
   "presets": {
-    "message": "预设"
+    "message": "预制设定"
   },
   "scratchAddonsTheme": {
     "message": "Scratch扩展主题"
