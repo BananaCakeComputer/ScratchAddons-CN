@@ -1,25 +1,15 @@
 <img src="https://aerfaying.com/Project/GetAsset?name=ac6b6f1f9e6d9f5e7c58585a0abc1745.svg" alt="Scratch Addons logo" align="right" width="128px"></img>
 # 欢迎来到Scratch扩展中文版仓库！
 
-[![](https://img.shields.io/github/stars/BananaCakeComputer/ScratchAddons-ForChinese?color=blue&style=flat-square)](https://github.com/BananaCakeComputer/ScratchAddons-ForChinese/stargazers) 
-[![](https://img.shields.io/github/forks/BananaCakeComputer/ScratchAddons-ForChinese?color=blue&style=flat-square)](https://github.com/BananaCakeComputer/ScratchAddons-ForChinese/network/members)
-[![](https://img.shields.io/github/watchers/BananaCakeComputer/ScratchAddons-ForChinese?color=blue&style=flat-square)](https://github.com/BananaCakeComputer/ScratchAddons-ForChinese/watchers) 
-[![](https://img.shields.io/github/issues/BananaCakeComputer/ScratchAddons-ForChinese?color=green&style=flat-square)](https://github.com/BananaCakeComputer/ScratchAddons-ForChinese/issues) 
-[![](https://img.shields.io/github/issues-pr/BananaCakeComputer/ScratchAddons-ForChinese?color=green&style=flat-square)](https://github.com/BananaCakeComputer/ScratchAddons-ForChinese/pulls) 
-[![](https://img.shields.io/github/license/BananaCakeComputer/ScratchAddons-ForChinese?style=flat-square)](https://github.com/BananaCakeComputer/ScratchAddons-ForChinese/blob/master/LICENSE) <!-- 2 spaces -->  
-[![](https://img.shields.io/chrome-web-store/v/fbeffbjdlemaoicjdapfpikkikjoneco?style=flat-square&logo=google-chrome&logoColor=white&label=version&color=4285F4)](https://chrome.google.com/webstore/detail/fbeffbjdlemaoicjdapfpikkikjoneco)
-[![](https://img.shields.io/chrome-web-store/users/fbeffbjdlemaoicjdapfpikkikjoneco?style=flat-square&logo=google-chrome&logoColor=white&label=users&color=4285F4)](https://chrome.google.com/webstore/detail/fbeffbjdlemaoicjdapfpikkikjoneco)
-[![](https://img.shields.io/amo/v/scratch-messaging-extension?style=flat-square&logo=firefox-browser&logoColor=white&label=version&color=FF7139)](https://addons.mozilla.org/firefox/addon/scratch-messaging-extension/)
-[![](https://img.shields.io/amo/users/scratch-messaging-extension?style=flat-square&logo=firefox-browser&logoColor=white&label=users&color=FF7139)](https://addons.mozilla.org/firefox/addon/scratch-messaging-extension/)
-[![](https://img.shields.io/github/v/release/ScratchAddons/ScratchAddons?style=flat-square&logo=github&logoColor=white&label=version&color=181717)](https://github.com/ScratchAddons/ScratchAddons/releases)
-[![](https://img.shields.io/github/downloads/ScratchAddons/ScratchAddons/total?style=flat-square&logo=github&logoColor=white&label=downloads&color=181717)](https://github.com/ScratchAddons/ScratchAddons/releases)
-[![](https://img.shields.io/badge/discuss-on_github-181717.svg?style=flat-square)](https://github.com/ScratchAddons/ScratchAddons/discussions)
-[![](https://img.shields.io/badge/chat-on_discord-7289da.svg?style=flat-square)](https://discord.gg/R5NBqwMjNc)
-[![](https://img.shields.io/badge/website-scratchaddons.com-ff7b26.svg?style=flat-square)](https://scratchaddons.com)
+[![](https://img.shields.io/github/stars/BananaCakeComputer/ScratchAddons-CN?color=blue&style=flat-square)](https://github.com/BananaCakeComputer/ScratchAddons-CN/stargazers) 
+[![](https://img.shields.io/github/forks/BananaCakeComputer/ScratchAddons-CN?color=blue&style=flat-square)](https://github.com/BananaCakeComputer/ScratchAddons-CN/network/members)
+[![](https://img.shields.io/github/watchers/BananaCakeComputer/ScratchAddons-CN?color=blue&style=flat-square)](https://github.com/BananaCakeComputer/ScratchAddons-CN/watchers) 
+[![](https://img.shields.io/github/issues/BananaCakeComputer/ScratchAddons-CN?color=green&style=flat-square)](https://github.com/BananaCakeComputer/ScratchAddons-CN/issues) 
+[![](https://img.shields.io/github/issues-pr/BananaCakeComputer/ScratchAddons-CN?color=green&style=flat-square)](https://github.com/BananaCakeComputer/ScratchAddons-CN/pulls)
 
 # 关于Scratch扩展中文版
 
-### 正在汉化v1.15.0版本，新版将在今年稍后发出
+### 正在汉化v1.15.0版本，新版将在今年稍后发出（来自2022：怎么可能呢，1.15.0都没汉化好）
 
 Scratch扩展中文版是专门为[ScratchAddons](https://github.com/ScratchAddons/ScratchAddons/)翻译的版本，它同时兼容Google Chrome和FireFox Browser。
 
@@ -27,9 +17,7 @@ ScratchAddons支持多国语言，可是ScratchAddons不支持中文，因此，
 
 # 如何使用Scratch扩展中文版
 
-如果您在中国大陆，安装完成之后，要想使用它，必须使用vpn翻墙软件，可以是扩展插件，也可以是应用程序
-
-当然，如果您是港澳台同胞（会看简体中文），海外华人，可以跳过上面的步骤
+如果您在中国大陆，安装完成之后，要想在Scratch官网中使用它，需要科学上网
 
 Scratch扩展必须配合[Scratch官网](https://scratch.mit.edu)
 
@@ -39,7 +27,7 @@ Scratch扩展必须配合[Scratch官网](https://scratch.mit.edu)
 
 ### 从扩展商店下载
 
-Scratch扩展中文版还在翻译阶段，不支持扩展商店下载
+Scratch扩展中文版不支持扩展商店下载（懒，微软开发者账号在去年申请的都不上传）
 
 ### 本地安装（唯一的方法
 
